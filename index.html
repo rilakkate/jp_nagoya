@@ -177,6 +177,65 @@
                 /* text-base / 16px */
             }
         }
+
+        /* ==========================================================================
+           統一名古屋車站與榮商圈分頁樣式 (比照每日行程字體大小與響應式優化)
+           ========================================================================== */
+
+        /* 1. 統一卡片主標題字體大小與樣式 */
+        #nagoya-station h3,
+        #sakae h3 {
+            font-size: 1.125rem !important;
+            /* text-lg / 18px */
+            font-weight: 800 !important;
+            /* font-black / 800 */
+            line-height: 1.5 !important;
+            margin-top: 0.5rem !important;
+        }
+
+        /* 2. 統一卡片敘述文字字體大小與樣式 */
+        #nagoya-station h3+p,
+        #sakae .bg-white > p {
+            font-size: 0.875rem !important;
+            /* text-sm / 14px */
+            font-weight: 600 !important;
+            /* font-semibold */
+            color: #475569 !important;
+            /* text-slate-600 */
+            line-height: 1.625 !important;
+            margin-top: 0.375rem !important;
+        }
+
+        /* 3. 統一細部資訊/提示框 (rounded-2xl) 內的文字與清單項目大小 */
+        #nagoya-station .rounded-2xl p:not(.font-black):not([class*="font-black"]),
+        #nagoya-station .rounded-2xl li,
+        #sakae .rounded-2xl p:not(.font-black):not([class*="font-black"]),
+        #sakae .rounded-2xl li {
+            font-size: 0.875rem !important;
+            /* text-sm / 14px */
+            font-weight: 600 !important;
+            color: #475569 !important;
+            line-height: 1.625 !important;
+        }
+
+        /* 4. 統一細部資訊/提示框內小標題樣式 */
+        #nagoya-station .rounded-2xl p.font-black,
+        #nagoya-station .rounded-2xl p[class*="font-black"],
+        #sakae .rounded-2xl p.font-black,
+        #sakae .rounded-2xl p[class*="font-black"] {
+            font-size: 0.95rem !important;
+            font-weight: 900 !important;
+            line-height: 1.5 !important;
+        }
+
+        /* 5. 響應式手機版優化 */
+        @media (max-width: 640px) {
+            #nagoya-station h3,
+            #sakae h3 {
+                font-size: 1rem !important;
+                /* text-base / 16px */
+            }
+        }
     </style>
 
 </head>
@@ -195,6 +254,10 @@
                         class="px-4 py-2 rounded-t-lg text-sm font-bold transition-all nav-active">行程總覽</button>
                     <button onclick="switchTab('itinerary')" id="btn-itinerary"
                         class="px-4 py-2 rounded-t-lg text-sm font-bold text-slate-500 hover:text-indigo-600 transition-all">每日行程</button>
+                    <button onclick="switchTab('nagoya-station')" id="btn-nagoya-station"
+                        class="px-4 py-2 rounded-t-lg text-sm font-bold text-slate-500 hover:text-indigo-600 transition-all">名古屋車站</button>
+                    <button onclick="switchTab('sakae')" id="btn-sakae"
+                        class="px-4 py-2 rounded-t-lg text-sm font-bold text-slate-500 hover:text-indigo-600 transition-all">榮商圈</button>
                     <button onclick="switchTab('lists')" id="btn-lists"
                         class="px-4 py-2 rounded-t-lg text-sm font-bold text-slate-500 hover:text-indigo-600 transition-all">清單管家</button>
                 </nav>
@@ -211,6 +274,10 @@
                     class="block w-full text-left p-3 rounded-xl font-bold hover:bg-indigo-50">行程總覽</button>
                 <button onclick="switchTab('itinerary'); toggleMobileMenu();"
                     class="block w-full text-left p-3 rounded-xl font-bold hover:bg-indigo-50">每日行程</button>
+                <button onclick="switchTab('nagoya-station'); toggleMobileMenu();"
+                    class="block w-full text-left p-3 rounded-xl font-bold hover:bg-indigo-50">名古屋車站</button>
+                <button onclick="switchTab('sakae'); toggleMobileMenu();"
+                    class="block w-full text-left p-3 rounded-xl font-bold hover:bg-indigo-50">榮商圈</button>
                 <button onclick="switchTab('lists'); toggleMobileMenu();"
                     class="block w-full text-left p-3 rounded-xl font-bold hover:bg-indigo-50">清單管家</button>
             </div>
@@ -515,6 +582,12 @@
                                 <h4 class="font-black text-lg text-slate-800 mt-2">名古屋車站周遭晚餐</h4>
                                 <p class="text-sm text-slate-600 font-bold mt-1 leading-relaxed">
                                     品嚐經典名古屋味噌豬排或手羽先（炸雞翅），並在藥妝店採買夏日防曬、防蚊用品。</p>
+                                <div class="mt-4 pt-2 border-t border-dashed border-slate-200">
+                                    <button onclick="switchTab('nagoya-station')"
+                                        class="inline-flex items-center justify-center w-full sm:w-auto bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-black text-sm px-6 py-3 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95">
+                                        <i class="fa-solid fa-store mr-2"></i> 點此查看「名古屋車站・購物美食攻略」詳細分頁
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -775,6 +848,12 @@
                                         21:00，夜間點燈效果非常奇幻迷人。</p>
                                     <p>🍴 <span class="text-indigo-700">晚餐與回程建議：</span>可在榮商圈地下街（Sakae Chika）或綠洲 21
                                         內美食街享用晚餐，隨後搭乘地下鐵東山線（往高畑方向）坐 2 站直達名古屋車站返回飯店（車費 ¥210，繼續刷環保券免扣款）。</p>
+                                </div>
+                                <div class="pt-2 border-t border-dashed border-slate-200">
+                                    <button onclick="switchTab('sakae')"
+                                        class="inline-flex items-center justify-center w-full sm:w-auto bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-black text-sm px-6 py-3 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95">
+                                        <i class="fa-solid fa-store mr-2"></i> 點此查看「榮商圈 7 大百貨美食攻略」詳細分頁
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -2063,6 +2142,12 @@
                                             class="text-indigo-600 font-black">「二禮、二拍手、一禮」</span>（鞠躬裝模作樣兩次、拍手兩下訴願、再鞠躬一次）。
                                     </p>
                                 </div>
+                                <div class="pt-2">
+                                    <button onclick="switchTab('sakae')"
+                                        class="inline-flex items-center text-xs font-black text-emerald-600 bg-emerald-50 px-4 py-2 rounded-full hover:bg-emerald-100 transition-colors w-full sm:w-auto justify-center sm:justify-start">
+                                        <i class="fa-solid fa-store mr-1.5"></i> 點此查看榮商圈百貨攻略
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -2154,10 +2239,15 @@
                                 <p class="text-sm text-slate-600 font-bold mt-1">返回名古屋車站。您可以逛逛各大百貨、採購藥妝、吉卜力與迪士尼周邊或消遣放鬆。
                                 </p>
                                 <div class="p-3 bg-slate-50 rounded-xl text-sm font-bold text-slate-700 space-y-2">
-                                    <p>🛍️ <span class="text-indigo-700">熱門逛街地標：</span>名鐵百貨店（與 NANA 醬合影）、JR Gate Tower
-                                        (吉卜力橡子共和國與迪士尼商店、Bic Camera)、ESCA地下街等。</p>
+                                    <p>🛍️ <span class="text-indigo-700">熱門逛街地標：</span>JR Gate Tower Mall、JR 名古屋高島屋、MIDLAND SQUARE、ESCA 地下街等。</p>
                                     <p>🍴 <span class="text-indigo-700">宵夜點心備忘：</span>下午剛吃完蓬萊軒鰻魚大餐，晚上若稍微嘴饞，可至 ESCA
                                         地下街或車站商圈品嚐「手羽先風來坊」雞翅或地標小吃「味仙台灣拉麵」作為宵夜！</p>
+                                </div>
+                                <div class="pt-2 border-t border-dashed border-slate-200">
+                                    <button onclick="switchTab('nagoya-station')"
+                                        class="inline-flex items-center justify-center w-full sm:w-auto bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-black text-sm px-6 py-3 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95">
+                                        <i class="fa-solid fa-store mr-2"></i> 點此查看「名古屋車站・購物美食攻略」詳細分頁
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -2178,8 +2268,7 @@
                                     class="fa-solid fa-route"></i></span>
                             <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
                                 <span
-                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">09:30
-                                    - 09:54</span>
+                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">09:30 - 09:54</span>
                                 <h4 class="font-black text-base text-slate-800 mt-2">晨間出發交通：名古屋站 ➔ 金城埠頭站 ➔ 鐵道館</h4>
 
                                 <div
@@ -2302,241 +2391,18 @@
                             <span
                                 class="absolute -left-[44px] top-0 bg-pink-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
                                     class="fa-solid fa-bag-shopping"></i></span>
-                            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-6">
+                            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4">
                                 <span class="text-sm font-black bg-pink-50 text-pink-600 px-3 py-1 rounded-full">14:45 -
                                     20:30</span>
-                                <h4 class="font-black text-xl text-slate-800 flex items-center">榮商圈頂級百貨血拼與美食巡禮 <a
-                                        href="https://www.google.com/maps/search/?api=1&query=栄駅+名古屋" target="_blank"
-                                        class="text-sky-500 hover:text-sky-600 ml-1.5"><i
-                                            class="fa-solid fa-location-dot"></i></a></h4>
+                                <h4 class="font-black text-xl text-slate-800 flex items-center">榮商圈頂級百貨血拼與美食巡禮</h4>
                                 <p class="text-sm text-slate-600 font-bold leading-relaxed">
-                                    榮商圈是名古屋最精華的百貨戰區！集結潮流服飾、人氣動漫周邊、美食餐廳與免稅店，適合全家盡情選購與大快朵頤。
+                                    榮商圈是名古屋最精華的百貨戰區！我們將在此逛街、血拼、享用美味晚餐。
                                 </p>
-
-                                <div class="space-y-5 font-bold text-slate-700 text-sm">
-
-                                    <!-- SAKAE NOVA -->
-                                    <div class="p-4 bg-purple-50/30 rounded-2xl border border-purple-100/50 space-y-3">
-                                        <p
-                                            class="text-purple-700 font-black text-base flex items-center gap-1.5 border-b border-purple-100 pb-1.5">
-                                            <i class="fa-solid fa-store text-purple-500"></i> SAKAE NOVA（潮流流行鞋款與生活文具）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">1F・經典日潮鞋：</span><span
-                                                        class="text-indigo-600 font-black">Onitsuka Tiger (鬼塚虎)</span> —
-                                                    質感極高且好穿的日系潮流運動鞋首選專櫃。</li>
-                                                <li><span class="text-slate-800 font-bold">3F ~ 6F・LoFT
-                                                        旗艦生活雜貨：</span>日本超人氣連鎖生活雜貨免稅大鋪！
-                                                    <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                            class="text-slate-800 font-bold">3F：</span>美容與健康雜貨
-                                                        (美妝藥妝、保養及個人護理小物)。</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-slate-800 font-bold">4F：</span>生活雜貨
-                                                        (餐具、廚房用品、精緻家居擺設)。</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-indigo-600 font-black">5F：文具天堂：</span>手帳、鋼筆、印章、超萌貼紙與設計文房具，必逛！</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-slate-800 font-bold">6F：</span>綜藝趣味雜貨
-                                                        (各式伴手禮盒、節慶小物、創意玩具動漫風商品)。</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- SKYLE -->
-                                    <div class="p-4 bg-sky-50/30 rounded-2xl border border-sky-100/50 space-y-3">
-                                        <p
-                                            class="text-sky-700 font-black text-base flex items-center gap-1.5 border-b border-sky-100 pb-1.5">
-                                            <i class="fa-solid fa-store text-sky-500"></i> SKYLE（平價服飾與超大百元店）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">4F・生活百元雜貨：</span><span
-                                                        class="text-indigo-600 font-black">3Coins+Plus</span> — 高質感的 300
-                                                    日圓精緻生活雜貨、收納用品與流行配件。</li>
-                                                <li><span class="text-slate-800 font-bold">5F・平價服飾首選：</span><span
-                                                        class="text-slate-900 font-bold">UNIQLO</span> —
-                                                    經典百搭的日系休閒服飾與免稅服務。</li>
-                                                <li><span class="text-slate-800 font-bold">6F・潮流時尚服飾：</span><span
-                                                        class="text-slate-900 font-bold">GU</span> — 最新潮流設計的平價男女裝與配件。
-                                                </li>
-                                                <li><span class="text-slate-800 font-bold">7F・超大型百元店聖地：</span>超巨型大創
-                                                    DAISO 聯合店鋪，包含三大品牌：
-                                                    <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                            class="text-indigo-600 font-black">超大間大創
-                                                            (DAISO)：</span>生活必需品、創意小物、伴手禮盒一應俱全。</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-indigo-600 font-black">Standard
-                                                            Products：</span>極簡無印風的高質感生活好物與家居裝飾。</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-pink-600 font-black">THREEPPY：</span>以粉嫩馬卡龍色系為主的超萌萌系生活雜貨。</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-
-                                    <!-- 松坂屋 -->
-                                    <div
-                                        class="p-4 bg-emerald-50/40 rounded-2xl border border-emerald-100/60 space-y-3">
-                                        <p
-                                            class="text-emerald-700 font-black text-base flex items-center gap-1.5 border-b border-emerald-100 pb-1.5">
-                                            <i class="fa-solid fa-store text-emerald-500"></i> 松坂屋（名古屋店）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <p class="font-black text-slate-900 flex items-center gap-1">🏢 本館（主力名店與美妝）：
-                                            </p>
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">B2・極推甜點：</span><span
-                                                        class="text-rose-600 font-black">ゴディパン (GODIVAPAN)</span> — 世界首家
-                                                    GODIVA 麵包店，人氣可頌與巧克力麵包必買！</li>
-                                                <li><span class="text-slate-800 font-bold">B1・伴手禮天堂：</span><span
-                                                        class="text-teal-700 font-black">茅乃舍</span> (頂級高湯包)、<span
-                                                        class="text-pink-600 font-black">HARBS</span> (千層蛋糕始祖)、<span
-                                                        class="text-amber-700 font-bold">小倉山莊</span> (精緻仙貝)、<span
-                                                        class="text-indigo-600 font-bold">天むす千壽</span> (炸蝦天婦羅飯糰)。</li>
-                                                <li><span
-                                                        class="text-slate-800 font-bold">1F・美妝旗艦：</span>CHANEL、DIOR、Clé
-                                                    de Peau Beauté、SUQQU、ALBION。</li>
-                                                <li><span class="text-slate-800 font-bold">9F・美食名店：</span><span
-                                                        class="text-orange-600 font-black">燒肉敘敘苑</span> (享用頂級燒肉晚餐)、<span
-                                                        class="text-indigo-700 font-bold">山本屋總本家</span> (味噌烏龍麵)、<span
-                                                        class="text-amber-700 font-bold">銀座天一</span> (正宗天婦羅)。</li>
-                                            </ul>
-                                            <p class="font-black text-slate-900 flex items-center gap-1 mt-2">🏢
-                                                南館（經典美食）：</p>
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">10F：</span><span
-                                                        class="text-red-500 font-black">あつた蓬萊軒</span>
-                                                    (若昨日在神宮排不進去，今日可在這品嚐備用的正宗鰻魚飯！)。</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- 名古屋 PARCO -->
-                                    <div class="p-4 bg-pink-50/30 rounded-2xl border border-pink-100/50 space-y-3">
-                                        <p
-                                            class="text-pink-700 font-black text-base flex items-center gap-1.5 border-b border-pink-100 pb-1.5">
-                                            <i class="fa-solid fa-cart-shopping text-pink-500"></i> 名古屋 PARCO（潮流與動漫中心）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <p class="font-black text-slate-900 flex items-center gap-1">🏢
-                                                東館（萌系動漫周邊，Luca 最愛）：</p>
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">2F・寶可夢聖地：</span><span
-                                                        class="text-yellow-600 font-black">Pokémon Center NAGOYA</span>
-                                                    — 名古屋寶可夢中心，限量的限定商品必買！</li>
-                                                <li><span class="text-slate-800 font-bold">3F・人氣IP牆：</span><span
-                                                        class="text-amber-600 font-black">懶懶熊專賣店
-                                                        (Rilakkuma)</span>、<span class="text-sky-600 font-black">吉伊卡哇專賣店
-                                                        (Chiikawa Land)</span>、<span
-                                                        class="text-indigo-600 font-bold">kiddy land</span>。</li>
-                                            </ul>
-                                            <p class="font-black text-slate-900 flex items-center gap-1 mt-2">🏢
-                                                西館（日系潮流服飾與名店）：</p>
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">1F：</span><span
-                                                        class="text-pink-600 font-black">HARBS</span>。</li>
-                                                <li><span class="text-slate-800 font-bold">3F：</span>Ungrid、KBF。</li>
-                                                <li><span class="text-slate-800 font-bold">4F・日牌女裝大集合：</span>OLIVE des
-                                                    OLIVE、PAGEBOY、LOWRYS FARM、Heather、SLY、JEANASiS、w closet。</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- HAERA -->
-                                    <div class="p-4 bg-rose-50/30 rounded-2xl border border-rose-100/50 space-y-3">
-                                        <p
-                                            class="text-rose-700 font-black text-base flex items-center gap-1.5 border-b border-rose-100 pb-1.5">
-                                            <i class="fa-solid fa-building text-rose-500"></i> HAERA（2026全新開幕地標 / 頂級美食）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">B2・高評價排隊名店：</span>
-                                                    <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                            class="text-slate-900 font-bold">とんかつ わだ福 (豬排わだ福)</span> —
-                                                        米油低溫熟成的超厚切炸豬排，配上羽釜現炊白飯，美味一絕。</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-slate-900 font-bold">天ぷらの浜金 ～旨い魚と揚げたて天ぷら～</span>
-                                                        — 職人現點現炸的酥脆天婦羅與每日直送新鮮魚介。</span>
-                                                </li>
-                                                <li><span class="text-slate-800 font-bold">4F・奢華餐飲首選：</span>
-                                                    <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                            class="text-rose-600 font-black">炭焼 うな富士 栄店</span> —
-                                                        榮登米其林與百名店的排隊鰻魚名店！選用肥美「青鰻」以千度高溫炭火烤製。</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-slate-900 font-bold">和牛スギモト 燦</span> —
-                                                        老字號肉舖直營的頂級黑毛和牛壽喜燒與涮涮鍋。</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- 中日ビル -->
-                                    <div class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/60 space-y-3">
-                                        <p
-                                            class="text-blue-700 font-black text-base flex items-center gap-1.5 border-b border-blue-100 pb-1.5">
-                                            <i class="fa-solid fa-building text-blue-500"></i> 中日大樓 (Chunichi Building /
-                                            2024全新地標)
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">B1・精品茶室：</span><span
-                                                        class="text-teal-700 font-black">YATAGARASU</span>
-                                                    (日本茶/濃厚抹茶專賣店)。</li>
-                                                <li><span class="text-slate-800 font-bold">1F・機能潮鞋：</span><span
-                                                        class="text-slate-900 font-bold">HOKA</span> (大受歡迎的高機能慢跑鞋專櫃)。
-                                                </li>
-                                                <li><span class="text-slate-800 font-bold">2F・露營神牌：</span><span
-                                                        class="text-emerald-700 font-black">mont-bell</span>
-                                                    (日本最大最齊全的戶外運動用品旗艦店，免稅極划算)。</li>
-                                                <li><span class="text-slate-800 font-bold">3F・高評價午晚餐：</span>
-                                                    <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                            class="text-slate-800 font-bold">うなぎの兼光</span>
-                                                        (三河一色產的高品質平價鰻魚飯)</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-rose-600 font-black">燒肉丸明</span>
-                                                        (名聞遐邇的優質飛驒牛燒肉)</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-slate-800 font-bold">博多天ぷらたかお</span>
-                                                        (超高CP值現炸天婦羅，明太子吃到飽！)</span>
-                                                </li>
-                                                <li class="text-indigo-600 font-black"><span
-                                                        class="text-slate-900 font-bold">7F 樓・空中夜景展望台：</span><span
-                                                        class="text-indigo-600">Sky Deck</span>
-                                                    開放公眾免費參觀！可在此飽覽榮商圈繁華的街道點燈，是代替綠洲 21 的絕佳浪漫夜景地標。</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- LACHIC -->
-                                    <div class="p-4 bg-orange-50/40 rounded-2xl border border-orange-100/60 space-y-3">
-                                        <p
-                                            class="text-orange-700 font-black text-base flex items-center gap-1.5 border-b border-orange-100 pb-1.5">
-                                            <i class="fa-solid fa-utensils text-orange-500"></i> LACHIC（美食老字號集中營）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">2F：</span><span
-                                                        class="text-pink-600 font-black">HARBS</span>。</li>
-                                                <li><span class="text-slate-800 font-bold">7F・超狂排隊名店街：</span>
-                                                    <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                            class="text-amber-800 font-bold">鳥開總本家</span>
-                                                        (金賞親子丼，軟嫩多汁)</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-amber-800 font-bold">ひつまぶし名古屋備長</span>
-                                                        (備長炭火直烤鰻魚三吃)</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-amber-800 font-bold">矢場とん</span> (經典味噌豬排)</span>
-                                                    <span class="block pl-4 text-slate-600">• <span
-                                                            class="text-rose-600 font-black">一升びん</span>
-                                                        (高CP值炭火松阪牛燒肉！)</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
+                                <div class="pt-2">
+                                    <button onclick="switchTab('sakae')"
+                                        class="inline-flex items-center justify-center w-full sm:w-auto bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-black text-sm px-6 py-3 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95">
+                                        <i class="fa-solid fa-store mr-2"></i> 點此查看「榮商圈 7 大百貨美食攻略」詳細分頁
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -2617,6 +2483,365 @@
                 </div>
             </div>
 
+        </section>
+
+                <section id="nagoya-station" class="tab-content hidden space-y-8 animate-fade-in">
+            <div
+                class="relative bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 rounded-[2rem] p-8 text-white shadow-2xl shadow-indigo-150 overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10 text-9xl">🚉</div>
+                <div class="relative z-10">
+                    <p class="text-indigo-100 text-sm font-black uppercase tracking-widest mb-2">Nagoya Station Guide</p>
+                    <h1 class="text-3xl md:text-4xl font-black mb-2">名古屋車站・購物美食攻略</h1>
+                    <p class="text-sm md:text-base font-bold text-indigo-50">集結地標百貨、必吃名古屋美食與經典地下街採購指南</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <!-- JR Gate Tower & Gate Tower Mall -->
+                <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-4">
+                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span class="mr-3 text-2xl">🏢</span>JR GATE TOWER MALL (JR 閘門塔購物商場)</h3>
+                    <p class="text-sm text-slate-600 font-bold leading-relaxed">
+                        與名古屋車站直通的潮流地標，集結了超人氣的生活雜貨、美妝保養、服飾品牌與大型書店、家電量販店，是車站周邊最好逛的商場之一！
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-bold text-slate-600">
+                        <div class="p-4 bg-indigo-50/50 rounded-2xl border border-indigo-100/60 space-y-2">
+                            <p class="text-indigo-700 font-black text-sm"><i class="fa-solid fa-bag-shopping mr-1.5"></i>低樓層美妝潮流與雜貨 (1F - 6F)</p>
+                            <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
+                                <li><span class="text-slate-800">1F：</span>Disney Store ｜ どんぐり共和国 (吉卜力橡子共和國)</li>
+                                <li><span class="text-slate-800">2F：</span>blue bottle ｜ LE LABO</li>
+                                <li><span class="text-slate-800">4F：</span>HARBS</li>
+                                <li><span class="text-slate-800">5F：</span>@COSME ｜ LEANASIS ｜ SLY ｜ ROPE PICNIC ｜ Ungrid ｜ SENSE OF PLACE ｜ WPC</li>
+                                <li><span class="text-slate-800">6F：</span>SHIRO ｜ BAUM</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-amber-50/50 rounded-2xl border border-amber-100/60 space-y-2">
+                            <p class="text-amber-700 font-black text-sm"><i class="fa-solid fa-store mr-1.5"></i>中高樓層與旗艦店鋪 (7F - 11F)</p>
+                            <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
+                                <li><span class="text-slate-800">7F：</span>Rilakkuma Store ｜ Snoopy</li>
+                                <li><span class="text-slate-800">8F：</span>三省堂書店</li>
+                                <li><span class="text-slate-900">9-10F：</span>BIC CAMERA</li>
+                                <li><span class="text-slate-800">11F：</span>GU ｜ UNIQLO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JR Nagoya Takashimaya (JR 名古屋高島屋) -->
+                <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-4">
+                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span class="mr-3 text-2xl">🛍️</span>JR 名古屋高島屋 (JR Nagoya Takashimaya)</h3>
+                    <p class="text-sm text-slate-600 font-bold leading-relaxed">
+                        與名古屋車站直通，是中部地區營業額極高的指標型百貨，化妝品與名品陣容極為強大，更是美食排隊名鋪的集中地！
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-bold text-slate-600">
+                        <div class="p-4 bg-rose-50/50 rounded-2xl border border-rose-100/60 space-y-2">
+                            <p class="text-rose-700 font-black text-sm"><i class="fa-solid fa-tag mr-1.5"></i>商場購物與精品美妝 (3F / 11F)</p>
+                            <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
+                                <li><span class="text-slate-800">3F：</span>CHANEL ｜ Dior ｜ YSL ｜ Clé de Peau Beauté ｜ SUQQU ｜ Elégance ｜ SHIRO ｜ Attenir ｜ BAO BAO ISSEY MIYAKE</li>
+                                <li><span class="text-slate-800">11F：</span>免稅櫃台（可領取 <span class="text-red-500 font-black">5% 折價券</span>，部分商品適用）</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-teal-50/50 rounded-2xl border border-teal-100/60 space-y-2">
+                            <p class="text-teal-700 font-black text-sm"><i class="fa-solid fa-utensils mr-1.5"></i>高樓層美食餐廳 (12F / 13F)</p>
+                            <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
+                                <li><span class="text-slate-800">12F：</span>伊藤園 点（てん） ｜ ミート矢澤 ｜ CURRY HOUSE CoCoICHIBANYA WORLD ｜ 鉄板・お好み焼き 電光石火</li>
+                                <li><span class="text-slate-800">13F：</span>山本屋總本家 ｜ ハンバーグ＆ステーキ 黑毛和牛 腰塚 ｜ とんかつ 恵亭 ｜ とり 五鐵（ゴテツ）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Midland Square (米德蘭廣場) -->
+                <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-4">
+                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span class="mr-3 text-2xl">🏙️</span>MIDLAND SQUARE (米德蘭廣場)</h3>
+                    <p class="text-sm text-slate-600 font-bold leading-relaxed">
+                        名古屋車站正對面的超高地標大樓，擁有中部地區極高的開放式觀景台，是欣賞名古屋城市夜景的絕佳景點！
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-bold text-slate-600">
+                        <div class="p-4 bg-purple-50/50 rounded-2xl border border-purple-100/60 space-y-2">
+                            <p class="text-purple-700 font-black text-sm"><i class="fa-solid fa-image mr-1.5"></i>天空迴廊室外觀景台 (44F - 46F)</p>
+                            <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
+                                <li><span class="text-slate-800">44F-46F・「天空迴廊（Sky Promenade）」：</span></li>
+                                <p class="pl-4 text-slate-600 leading-relaxed font-bold">中部地區最高的室外觀景台。採用室外半開放式的設計，可以 360 度俯瞰名古屋市區全景，黃昏與夜景氣氛極佳！</p>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-blue-50/50 rounded-2xl border border-blue-100/60 space-y-2">
+                            <p class="text-blue-700 font-black text-sm"><i class="fa-solid fa-circle-info mr-1.5"></i>參觀資訊</p>
+                            <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
+                                <li><span class="text-slate-800">開放時間：</span>11:00 - 22:00 (最後入場 21:30)</li>
+                                <li><span class="text-slate-800">特色：</span>可從名古屋車站地下通道直達，搭乘雙層快速穿梭電梯。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ESCA Underground Street (ESCA地下街) -->
+                <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-4">
+                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span class="mr-3 text-2xl">🚇</span>ESCA 地下街</h3>
+                    <p class="text-sm text-slate-600 font-bold leading-relaxed">
+                        位於名古屋車站新幹線口（西口）正下方，下車即達！這裡聚集了大量的名古屋在地特色美食餐廳、藥妝店、伴手禮店，是轉乘新幹線或回國前補貨的黃金通道。
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-bold text-slate-600">
+                        <div class="p-4 bg-orange-50/50 rounded-2xl border border-orange-100/60 space-y-2">
+                            <p class="text-orange-700 font-black text-sm"><i class="fa-solid fa-basket-shopping mr-1.5"></i>購物與藥妝推薦</p>
+                            <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
+                                <li><span class="text-slate-800">千里馬藥局與各式藥妝：</span>地下街內設有免稅藥妝店，採購非常方便。</li>
+                                <li><span class="text-slate-800">名古屋名產專賣店：</span>一次買齊名物蝦仙貝、手羽先風味餅乾、赤福等伴手禮。</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-sky-50/50 rounded-2xl border border-sky-100/60 space-y-2">
+                            <p class="text-sky-700 font-black text-sm"><i class="fa-solid fa-fire mr-1.5"></i>經典名古屋美食推薦</p>
+                            <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
+                                <li><span class="text-slate-800">山本屋本店：</span>名古屋著名的味噌烏龍麵老字號，湯頭濃郁、麵條極具嚼勁。</li>
+                                <li><span class="text-slate-800">矢場とん (矢場豬排)：</span>超人氣鐵板味噌豬排，濃郁醬汁與厚實豬肉完美搭配。</li>
+                                <li><span class="text-slate-800">鳥開総本家 (鳥開總本家)：</span>以名牌高級雞肉「名古屋地雞」製作的極致親子丼與手羽先。</li>
+                                <li><span class="text-slate-800">風来坊 (風來坊)：</span>手羽先（炸雞翅）元祖店，特製醬汁與芝麻香氣讓人停不下來。</li>
+                                <li><span class="text-slate-800">名古屋 備長 (備長鰻魚飯)：</span>以備長炭直火慢烤的美味鰻魚三吃。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sakae" class="tab-content space-y-8 animate-fade-in">
+            <div
+                class="relative bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-[2rem] p-8 text-white shadow-2xl shadow-indigo-150 overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10 text-9xl">🛍️</div>
+                <div class="relative z-10">
+                    <p class="text-indigo-100 text-sm font-black uppercase tracking-widest mb-2">Sakae Shopping Guide</p>
+                    <h1 class="text-3xl md:text-4xl font-black mb-2">榮商圈・7 大百貨購物指南</h1>
+                    <p class="text-sm md:text-base font-bold text-indigo-50">精選榮商圈最核心的 7 家百貨與全新地標，包含潮流、動漫與頂級美食</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-6">
+                <p class="text-sm text-slate-600 font-bold leading-relaxed">
+                    榮商圈是名古屋最精華的百貨戰區！集結潮流服飾、人氣動漫周邊、美食餐廳與免稅店，適合全家盡情選購與大快朵頤。
+                </p>
+
+                <div class="space-y-5 font-bold text-slate-700 text-sm">
+
+                                    <!-- SAKAE NOVA -->
+                                    <div class="p-4 bg-purple-50/30 rounded-2xl border border-purple-100/50 space-y-3">
+                                        <p
+                                            class="text-purple-700 font-black text-base flex items-center gap-1.5 border-b border-purple-100 pb-1.5">
+                                            <i class="fa-solid fa-store text-purple-500"></i> SAKAE NOVA（潮流流行鞋款與生活文具）
+                                        </p>
+                                        <div class="space-y-2 text-xs">
+                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">1F・經典日潮鞋：</span><span
+                                                        class="text-indigo-600 font-black">Onitsuka Tiger (鬼塚虎)</span> —
+                                                     質感極高且好穿的日系潮流運動鞋首選專櫃。</li>
+                                                <li><span class="text-slate-800 font-bold">3F ~ 6F・LoFT
+                                                         旗艦生活雜貨：</span>日本超人氣連鎖生活雜貨免稅大鋪！
+                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
+                                                             class="text-slate-800 font-bold">3F：</span>美容與健康雜貨
+                                                         (美妝藥妝、保養及個人護理小物)。</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-slate-800 font-bold">4F：</span>生活雜貨
+                                                         (餐具、廚房用品、精緻家居擺設)。</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-indigo-600 font-black">5F：文具天堂：</span>手帳、鋼筆、印章、超萌貼紙與設計文房具，必逛！</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-slate-800 font-bold">6F：</span>綜藝趣味雜貨
+                                                         (各式伴手禮盒、節慶小物、創意玩具動漫風商品)。</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- SKYLE -->
+                                    <div class="p-4 bg-sky-50/30 rounded-2xl border border-sky-100/50 space-y-3">
+                                        <p
+                                            class="text-sky-700 font-black text-base flex items-center gap-1.5 border-b border-sky-100 pb-1.5">
+                                            <i class="fa-solid fa-store text-sky-500"></i> SKYLE（平價服飾與超大百元店）
+                                        </p>
+                                        <div class="space-y-2 text-xs">
+                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">4F・生活百元雜貨：</span><span
+                                                        class="text-indigo-600 font-black">3Coins+Plus</span> — 高質感的 300
+                                                     日圓精緻生活雜貨、收納用品與流行配件。</li>
+                                                <li><span class="text-slate-800 font-bold">5F・平價服飾首選：</span><span
+                                                        class="text-slate-900 font-bold">UNIQLO</span> —
+                                                     經典百搭的日系休閒服飾與免稅服務。</li>
+                                                <li><span class="text-slate-800 font-bold">6F・潮流時尚服飾：</span><span
+                                                        class="text-slate-900 font-bold">GU</span> — 最新潮流設計的平價男女裝與配件。
+                                                 </li>
+                                                <li><span class="text-slate-800 font-bold">7F・超大型百元店聖地：</span>超巨型大創
+                                                     DAISO 聯合店鋪，包含三大品牌：
+                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
+                                                             class="text-indigo-600 font-black">超大間大創
+                                                             (DAISO)：</span>生活必需品、創意小物、伴手禮盒一應俱全。</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-indigo-600 font-black">Standard
+                                                             Products：</span>極簡無印風的高質感生活好物與家居裝飾。</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-pink-600 font-black">THREEPPY：</span>以粉嫩馬卡龍色系為主的超萌萌系生活雜貨。</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- 松坂屋 -->
+                                    <div
+                                        class="p-4 bg-emerald-50/40 rounded-2xl border border-emerald-100/60 space-y-3">
+                                        <p
+                                            class="text-emerald-700 font-black text-base flex items-center gap-1.5 border-b border-emerald-100 pb-1.5">
+                                            <i class="fa-solid fa-store text-emerald-500"></i> 松坂屋（名古屋店）
+                                        </p>
+                                        <div class="space-y-2 text-xs">
+                                            <p class="font-black text-slate-900 flex items-center gap-1">🏢 本館（主力名店與美妝）：
+                                             </p>
+                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">B2・極推甜點：</span><span
+                                                        class="text-rose-600 font-black">ゴディパン (GODIVAPAN)</span> — 世界首家
+                                                     GODIVA 麵包店，人氣可頌與巧克力麵包必買！</li>
+                                                <li><span class="text-slate-800 font-bold">B1・伴手禮天堂：</span><span
+                                                        class="text-teal-700 font-black">茅乃舍</span> (頂級高湯包)、<span
+                                                        class="text-pink-600 font-black">HARBS</span> (千層蛋糕始祖)、<span
+                                                        class="text-amber-700 font-bold">小倉山莊</span> (精緻仙貝)。</li>
+                                                <li><span
+                                                        class="text-slate-800 font-bold">1F・美妝旗艦：</span>CHANEL、DIOR、Clé
+                                                     de Peau Beauté、SUQQU、ALBION。</li>
+                                                <li><span class="text-slate-800 font-bold">9F・美食名店：</span><span
+                                                        class="text-orange-600 font-black">燒肉敘敘苑</span> (享用頂級燒肉晚餐)、<span
+                                                        class="text-indigo-700 font-bold">山本屋總本家</span> (味噌烏龍麵)、<span
+                                                        class="text-amber-700 font-bold">銀座天一</span> (正宗天婦羅)。</li>
+                                            </ul>
+                                            <p class="font-black text-slate-900 flex items-center gap-1 mt-2">🏢
+                                                 南館（經典美食）：</p>
+                                             <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">10F：</span><span
+                                                        class="text-red-500 font-black">あつた蓬萊軒</span>
+                                                     (若昨日在神宮排不進去，今日可在這品嚐備用的正宗鰻魚飯！)。</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- 名古屋 PARCO -->
+                                    <div class="p-4 bg-pink-50/30 rounded-2xl border border-pink-100/50 space-y-3">
+                                        <p
+                                            class="text-pink-700 font-black text-base flex items-center gap-1.5 border-b border-pink-100 pb-1.5">
+                                            <i class="fa-solid fa-cart-shopping text-pink-500"></i> 名古屋 PARCO（潮流與動漫中心）
+                                        </p>
+                                        <div class="space-y-2 text-xs">
+                                            <p class="font-black text-slate-900 flex items-center gap-1">🏢
+                                                 東館（萌系動漫周邊，Luca 最愛）：</p>
+                                             <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">2F・寶可夢聖地：</span><span
+                                                        class="text-yellow-600 font-black">Pokémon Center NAGOYA</span>
+                                                     — 名古屋寶可夢中心，限量的限定商品必買！</li>
+                                                <li><span class="text-slate-800 font-bold">3F・人氣IP牆：</span><span
+                                                        class="text-amber-600 font-black">懶懶熊專賣店
+                                                         (Rilakkuma)</span>、<span class="text-sky-600 font-black">吉伊卡哇專賣店
+                                                         (Chiikawa Land)</span>、<span
+                                                         class="text-indigo-600 font-bold">kiddy land</span>。</li>
+                                            </ul>
+                                            <p class="font-black text-slate-900 flex items-center gap-1 mt-2">🏢
+                                                 西館（日系潮流服飾與名店）：</p>
+                                             <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">1F：</span><span
+                                                        class="text-pink-600 font-black">HARBS</span>。</li>
+                                                <li><span class="text-slate-800 font-bold">3F：</span>Ungrid、KBF。</li>
+                                                <li><span class="text-slate-800 font-bold">4F・日牌女裝大集合：</span>OLIVE des
+                                                     OLIVE、PAGEBOY、LOWRYS FARM、Heather、SLY、JEANASiS、w closet。</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- HAERA -->
+                                    <div class="p-4 bg-rose-50/30 rounded-2xl border border-rose-100/50 space-y-3">
+                                        <p
+                                            class="text-rose-700 font-black text-base flex items-center gap-1.5 border-b border-rose-100 pb-1.5">
+                                            <i class="fa-solid fa-building text-rose-500"></i> HAERA（2026全新開幕地標 / 頂級美食）
+                                        </p>
+                                        <div class="space-y-2 text-xs">
+                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">B2・高評價排隊名店：</span>
+                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
+                                                             class="text-slate-900 font-bold">とんかつ わだ福 (豬排わだ福)</span> —
+                                                         米油低溫熟成的超厚切炸豬排，配上羽釜現炊白飯，美味一絕。</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-slate-900 font-bold">天ぷらの浜金 ～旨い魚と揚げたて天ぷら～</span>
+                                                         — 職人現點現炸的酥脆天婦羅與每日直送新鮮魚介。</span>
+                                                 </li>
+                                                <li><span class="text-slate-800 font-bold">4F・奢華餐飲首選：</span>
+                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
+                                                             class="text-rose-600 font-black">炭焼 うな富士 栄店</span> —
+                                                         榮登米其林與百名店的排隊鰻魚名店！選用肥美「青鰻」以千度高溫炭火烤製。</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-slate-900 font-bold">和牛スギモト 燦</span> —
+                                                         老字號肉舖直營的頂級黑毛和牛壽喜燒與涮涮鍋。</span>
+                                                 </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- 中日ビル -->
+                                    <div class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/60 space-y-3">
+                                        <p
+                                            class="text-blue-700 font-black text-base flex items-center gap-1.5 border-b border-blue-100 pb-1.5">
+                                            <i class="fa-solid fa-building text-blue-500"></i> 中日大樓 (Chunichi Building /
+                                             2024全新地標)
+                                        </p>
+                                        <div class="space-y-2 text-xs">
+                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">B1・精品茶室：</span><span
+                                                        class="text-teal-700 font-black">YATAGARASU</span>
+                                                     (日本茶/濃厚抹茶專賣店)。</li>
+                                                <li><span class="text-slate-800 font-bold">1F・機能潮鞋：</span><span
+                                                        class="text-slate-900 font-bold">HOKA</span> (大受歡迎的高機能慢跑鞋專櫃)。
+                                                 </li>
+                                                <li><span class="text-slate-800 font-bold">2F・露營神牌：</span><span
+                                                        class="text-emerald-700 font-black">mont-bell</span>
+                                                     (日本最大最齊全的戶外運動用品旗艦店，免稅極划算)。</li>
+                                                <li><span class="text-slate-800 font-bold">3F・高評價午晚餐：</span>
+                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
+                                                             class="text-slate-800 font-bold">うなぎの兼光</span>
+                                                         (三河一色產的高品質平價鰻魚飯)</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-rose-600 font-black">燒肉丸明</span>
+                                                         (名聞遐邇的優質飛驒牛燒肉)</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-slate-800 font-bold">博多天ぷらたかお</span>
+                                                         (超高CP值現炸天婦羅，明太子吃到飽！)</span>
+                                                 </li>
+                                                <li class="text-indigo-600 font-black"><span
+                                                        class="text-slate-900 font-bold">7F 樓・空中夜景展望台：</span><span
+                                                        class="text-indigo-600">Sky Deck</span>
+                                                     開放公眾免費參觀！可在此飽覽榮商圈繁華的街道點燈，是代替綠洲 21 的絕佳浪漫夜景地標。</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- LACHIC -->
+                                    <div class="p-4 bg-orange-50/40 rounded-2xl border border-orange-100/60 space-y-3">
+                                        <p
+                                            class="text-orange-700 font-black text-base flex items-center gap-1.5 border-b border-orange-100 pb-1.5">
+                                            <i class="fa-solid fa-utensils text-orange-500"></i> LACHIC（美食老字號集中營）
+                                        </p>
+                                        <div class="space-y-2 text-xs">
+                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                                <li><span class="text-slate-800 font-bold">2F：</span><span
+                                                        class="text-pink-600 font-black">HARBS</span>。</li>
+                                                <li><span class="text-slate-800 font-bold">7F・超狂排隊名店街：</span>
+                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
+                                                             class="text-amber-800 font-bold">鳥開總本家</span>
+                                                         (金賞親子丼，軟嫩多汁)</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-amber-800 font-bold">ひつまぶし名古屋備長</span>
+                                                         (備長炭火直烤鰻魚三吃)</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-amber-800 font-bold">矢場とん</span> (經典味噌豬排)</span>
+                                                     <span class="block pl-4 text-slate-600">• <span
+                                                             class="text-rose-600 font-black">一升びん</span>
+                                                         (高CP值炭火松阪牛燒肉！)</span>
+                                                 </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                </div>
+            </div>
         </section>
 
         <section id="lists" class="tab-content space-y-8 animate-fade-in">
