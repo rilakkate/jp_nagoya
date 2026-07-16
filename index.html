@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 
 <head>
@@ -195,7 +195,7 @@
 
         /* 2. 統一卡片敘述文字字體大小與樣式 */
         #nagoya-station h3+p,
-        #sakae .bg-white > p {
+        #sakae .bg-white>p {
             font-size: 0.875rem !important;
             /* text-sm / 14px */
             font-weight: 600 !important;
@@ -230,6 +230,7 @@
 
         /* 5. 響應式手機版優化 */
         @media (max-width: 640px) {
+
             #nagoya-station h3,
             #sakae h3 {
                 font-size: 1rem !important;
@@ -366,8 +367,9 @@
                         <span
                             class="inline-block px-3 py-1 rounded-lg bg-blue-500 text-white text-xs font-black mb-2">D3
                             · 7/20</span>
-                        <p class="text-sm font-bold text-slate-700 group-hover:text-blue-600 transition-colors">名古屋港水族館
-                            ➔ LaLaport</p>
+                        <p class="text-sm font-bold text-slate-700 group-hover:text-blue-600 transition-colors">磁浮鐵道館
+                            ➔
+                            榮夜景</p>
                     </button>
                     <button onclick="jumpToDay(4)"
                         class="group p-4 bg-green-50 rounded-2xl border-2 border-green-200 hover:border-green-400 hover:bg-green-100 transition-all text-left shadow-md">
@@ -381,32 +383,32 @@
                         <span
                             class="inline-block px-3 py-1 rounded-lg bg-purple-500 text-white text-xs font-black mb-2">D5
                             · 7/22</span>
-                        <p class="text-sm font-bold text-slate-700 group-hover:text-purple-600 transition-colors">犬山城老街 ➔
-                            MOZO</p>
+                        <p class="text-sm font-bold text-slate-700 group-hover:text-purple-600 transition-colors">科學館 ➔
+                            三輪神社 ➔ 大須</p>
                     </button>
                     <button onclick="jumpToDay(6)"
                         class="group p-4 bg-slate-50 rounded-2xl border-2 border-transparent hover:border-cyan-400 hover:bg-cyan-50 transition-all text-left shadow-sm">
                         <span
                             class="inline-block px-3 py-1 rounded-lg bg-cyan-500 text-white text-xs font-black mb-2">D6
                             · 7/23</span>
-                        <p class="text-sm font-bold text-slate-700 group-hover:text-cyan-600 transition-colors">豐田紀念館 ➔
-                            熱田神宮</p>
+                        <p class="text-sm font-bold text-slate-700 group-hover:text-cyan-600 transition-colors">犬山城老街 ➔
+                            MOZO</p>
                     </button>
                     <button onclick="jumpToDay(7)"
                         class="group p-4 bg-slate-50 rounded-2xl border-2 border-transparent hover:border-teal-400 hover:bg-teal-50 transition-all text-left shadow-sm">
                         <span
                             class="inline-block px-3 py-1 rounded-lg bg-teal-500 text-white text-xs font-black mb-2">D7
                             · 7/24</span>
-                        <p class="text-sm font-bold text-slate-700 group-hover:text-teal-600 transition-colors">科學館 ➔
-                            三輪神社 ➔ 大須</p>
+                        <p class="text-sm font-bold text-slate-700 group-hover:text-teal-600 transition-colors">名古屋港水族館 ➔
+                            LaLaport</p>
                     </button>
                     <button onclick="jumpToDay(8)"
                         class="group p-4 bg-slate-50 rounded-2xl border-2 border-transparent hover:border-pink-400 hover:bg-pink-50 transition-all text-left shadow-sm">
                         <span
                             class="inline-block px-3 py-1 rounded-lg bg-pink-500 text-white text-xs font-black mb-2">D8
                             · 7/25</span>
-                        <p class="text-sm font-bold text-slate-700 group-hover:text-pink-600 transition-colors">磁浮鐵道館 ➔
-                            榮夜景</p>
+                        <p class="text-sm font-bold text-slate-700 group-hover:text-pink-600 transition-colors">豐田紀念館 ➔
+                            熱田神宮</p>
                     </button>
                     <button onclick="jumpToDay(9)"
                         class="group p-4 bg-slate-50 rounded-2xl border-2 border-transparent hover:border-sky-400 hover:bg-sky-50 transition-all text-left shadow-sm">
@@ -437,8 +439,8 @@
                         <h4 class="font-black text-sm text-sky-600 flex items-center gap-1.5 mb-1.5"><i
                                 class="fa-solid fa-umbrella"></i> 方案 A：雨天神隊友（全室內）</h4>
                         <p class="text-xs text-slate-600 leading-relaxed font-bold">
-                            <span class="font-bold text-slate-800">D3水族館、D6豐田紀念館、D7科學館、D8磁浮館</span> 皆為純室內冷氣展館。下雨可直接與戶外的
-                            D2古城、D5犬山城進行整天互換。
+                            <span class="font-bold text-slate-800">D3磁浮館、D5科學館、D7水族館、D8豐田紀念館</span> 皆為純室內冷氣展館。下雨可直接與戶外的
+                            D2古城、D6犬山城進行整天互換。
                         </p>
                     </div>
                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-amber-100">
@@ -468,20 +470,27 @@
                     <p><i class="fa-solid fa-clock mr-1 text-amber-500 w-4"></i> 時間資訊：退房時間為上午 10:00 前</p>
                 </div>
 
-                <div class="mt-4 p-4 bg-indigo-50/50 border border-indigo-100/60 rounded-2xl text-sm font-bold text-slate-700 space-y-2.5">
-                    <p class="text-indigo-700 font-black text-base flex items-center gap-1.5 border-b border-indigo-100/60 pb-1.5">
+                <div
+                    class="mt-4 p-4 bg-indigo-50/50 border border-indigo-100/60 rounded-2xl text-sm font-bold text-slate-700 space-y-2.5">
+                    <p
+                        class="text-indigo-700 font-black text-base flex items-center gap-1.5 border-b border-indigo-100/60 pb-1.5">
                         <i class="fa-solid fa-route"></i> 🚶 名鐵名古屋站 ➔ 飯店步行導航 (約 3~5 分鐘)
                     </p>
                     <div class="space-y-2.5 text-slate-600 leading-relaxed font-bold">
                         <p class="text-slate-800 font-black flex items-start gap-1">
-                            <span class="bg-indigo-500 text-white rounded px-1.5 py-0.5 text-[10px] font-bold shrink-0">出站口</span>
+                            <span
+                                class="bg-indigo-500 text-white rounded px-1.5 py-0.5 text-[10px] font-bold shrink-0">出站口</span>
                             搭乘 μ-SKY 抵達名鐵名古屋站後，請往「中央改札口」或「北改札口」出站，走至地面的「JR名古屋站 櫻通口」（有金色大鐘、戶外大型計程車招呼站與圓弧形白色地標的一側）。
                         </p>
                         <div class="border-t border-indigo-100/40 my-2 pt-2 space-y-1.5 pl-1.5">
-                            <p class="flex items-start gap-1"><span class="text-indigo-600 font-black shrink-0">①</span> 走出櫻通口後往左前方前進。</p>
-                            <p class="flex items-start gap-1"><span class="text-indigo-600 font-black shrink-0">②</span> 穿過斑馬線往「大名古屋大廈」側，並向左轉前進。</p>
-                            <p class="flex items-start gap-1"><span class="text-indigo-600 font-black shrink-0">③</span> 在全家便利商店前左轉前進約 30 公尺。（注意：不要過紅綠燈，請在路口往右轉）</p>
-                            <p class="flex items-start gap-1"><span class="text-indigo-600 font-black shrink-0">④</span> 順著路直直往前走，飯店就會在您的右手邊。</p>
+                            <p class="flex items-start gap-1"><span class="text-indigo-600 font-black shrink-0">①</span>
+                                走出櫻通口後往左前方前進。</p>
+                            <p class="flex items-start gap-1"><span class="text-indigo-600 font-black shrink-0">②</span>
+                                穿過斑馬線往「大名古屋大廈」側，並向左轉前進。</p>
+                            <p class="flex items-start gap-1"><span class="text-indigo-600 font-black shrink-0">③</span>
+                                在全家便利商店前左轉前進約 30 公尺。（注意：不要過紅綠燈，請在路口往右轉）</p>
+                            <p class="flex items-start gap-1"><span class="text-indigo-600 font-black shrink-0">④</span>
+                                順著路直直往前走，飯店就會在您的右手邊。</p>
                         </div>
                         <div class="pt-1.5 border-t border-dashed border-indigo-200/50">
                             <a href="https://montblanc-hotel.jp/raffine/topics/2498/" target="_blank"
@@ -887,25 +896,10 @@
 
                 <div id="day-3" class="day-panel hidden">
                     <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-blue-500 mb-6">
-                        <h2 class="text-2xl font-black text-slate-800">7/20 (一) 海洋生物與港灣購物</h2>
-                        <p class="text-slate-500 font-bold text-sm">第三站：超震撼虎鯨表演與港灣大型購物商場</p>
+                        <h2 class="text-2xl font-black text-slate-800">7/20 (一) 實體新幹線聖地與榮商圈百貨巡禮</h2>
+                        <p class="text-slate-500 font-bold text-sm">第三站：超導磁浮科技體驗、榮商圈百貨血拼</p>
                     </div>
-
                     <div class="relative pl-8 border-l-4 border-blue-100 space-y-10 ml-4">
-                        <div
-                            class="bg-blue-50 border-2 border-dashed border-blue-400 rounded-2xl p-4 text-slate-700 font-bold text-sm">
-                            <p class="text-blue-700 font-black text-base flex items-center gap-1.5 mb-1"><i
-                                    class="fa-solid fa-ticket"></i> 🎫 親子神券推薦（於名古屋車站購買）：</p>
-                            <p class="mb-2">本日建議購買 <span
-                                    class="bg-blue-200 px-1 rounded text-slate-950 font-black">「地下鐵全線 24
-                                    小時券」</span>，搭乘地鐵全線超划算！</p>
-                            <ul class="list-disc list-inside text-xs font-bold text-slate-600 space-y-1 pl-1">
-                                <li><span class="text-slate-900">① 票券價格：</span>成人 ¥760 / 兒童 ¥380</li>
-                                <li><span class="text-slate-900">② 適用範圍：</span>名古屋市營地下鐵全線</li>
-                                <li><span class="text-slate-900">③ 票券特色：</span>從首次通過檢票口（刷卡）起算的 24 小時內有效，跨日使用彈性極大。</li>
-                            </ul>
-                        </div>
-
 
                         <div class="relative">
                             <span
@@ -913,168 +907,27 @@
                                     class="fa-solid fa-route"></i></span>
                             <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
                                 <span
-                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">08:54
-                                    - 09:22 (車程28分鐘)</span>
-                                <h4 class="font-black text-base text-slate-800 mt-2">晨間出發交通：名古屋站 ➔ 名古屋港站</h4>
+                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">09:30
+                                    - 09:54</span>
+                                <h4 class="font-black text-base text-slate-800 mt-2">晨間出發交通：名古屋站 ➔ 金城埠頭站 ➔ 鐵道館</h4>
+
                                 <div
                                     class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
                                     <div class="flex items-start gap-2">
                                         <span
                                             class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
-                                        <p class="text-slate-800">從飯店步行至地下鐵 <span
-                                                class="text-indigo-600">「名古屋」站</span>，搭乘地下鐵東山線（藤が丘行）至 <span
-                                                class="text-slate-900 font-black">「榮」站</span>。</p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <span
-                                            class="bg-purple-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">轉乘</span>
-                                        <p class="text-slate-800">於榮站內換乘地下鐵名城線上前津・金山方面（名古屋港行方向）搭至 <span
-                                                class="text-slate-900 font-black">「名古屋港」站</span>。</p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <i class="fa-solid fa-ticket text-emerald-500 mt-0.5"></i>
-                                        <p class="text-slate-700">地下鐵全程乘車費用：大人 270 日圓 / 兒童 130 日圓 (直接使用剛買好的24小時券插卡搭乘)
+                                        <p class="text-slate-800">於 <span
+                                                class="text-indigo-600 font-black">名古屋車站</span> 搭乘 <span
+                                                class="text-slate-900 font-black">青波線（あおなみ線）</span> 往金城埠頭方向之電車，一路直達終點站。
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-blue-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-fish"></i></span>
-                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-4">
-                                <span class="text-sm font-black bg-blue-50 text-blue-600 px-3 py-1 rounded-full">09:30 -
-                                    14:30 (約5小時)</span>
-                                <h4 class="font-black text-xl text-slate-800 flex flex-wrap items-center gap-2">
-                                    名古屋港水族館
-                                    <a href="https://nagoyaaqua.jp/" target="_blank"
-                                        class="text-xs bg-blue-100 text-blue-700 px-2.5 py-1 rounded-md hover:bg-blue-200"
-                                        title="打開官方網站"><i class="fa-solid fa-globe mr-1"></i>官方網站</a>
-                                    <a href="https://nagoyaaqua.jp/traditional-chinese/info_map_zh.pdf" target="_blank"
-                                        class="text-xs bg-emerald-100 text-emerald-700 px-2.5 py-1 rounded-md hover:bg-emerald-200"
-                                        title="打開繁中館內地圖 PDF"><i class="fa-solid fa-map mr-1"></i>繁中館內地圖</a>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=名古屋港水族館" target="_blank"
-                                        class="text-sky-500 text-base" title="Google 地圖導航"><i
-                                            class="fa-solid fa-location-dot"></i></a>
-                                </h4>
-                                <div class="p-3 bg-blue-50 rounded-xl text-sm font-bold text-slate-700 space-y-1">
-                                    <p>• 門票費用：大人 2,030日圓 / 兒童（7歲小學生）1,010日圓。</p>
-                                    <p>• 設施分布：入館入口位於北館 2F，本路線引導直接穿過通道前往南館開始遊覽，隨後再移至北館觀賞大秀。</p>
-                                </div>
-
-                                <div
-                                    class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2 text-sm text-slate-700 font-bold">
-                                    <p class="font-black text-indigo-600 flex items-center gap-1.5 text-sm"><i
-                                            class="fa-solid fa-compass"></i> 7/20 推薦：【先南館 ➔ 再北館】黃金流暢動線</p>
-                                    <p class="pl-1 font-bold text-sm text-slate-600 leading-relaxed">
-                                        為了在清晨避開剛開館時北館主劇場的擁擠卡位人潮，並完美配合 7/20 官方公告的表演時間，最順暢、體力消耗最少的無縫路線如下：
-                                    </p>
-                                    <ol
-                                        class="list-decimal list-inside space-y-2.5 pl-1 text-sm font-bold text-slate-700">
-                                        <li><span class="text-slate-900">[09:30 入館 ➔ 直奔南館 2F]：</span><br>一入館直接走進南館
-                                            2F「日本之海」區。在 <span class="text-amber-600">10:15</span> 觀賞第一個精彩亮點：<span
-                                                class="underline">黑潮大水槽餵食時間 (10分鐘)</span>。</li>
-                                        <li><span class="text-slate-900">[10:30 - 12:20 ➔
-                                                繼續漫步南館]：</span><br>沿著南館單向動線往上逛，在 <span
-                                                class="text-amber-600">11:30</span> 前抵達南館 3F「南極之海」區，欣賞圓滾滾的企鵝家族與海龜。</li>
-                                        <li><span class="text-slate-900">[12:20 ➔ 轉戰北館 3F
-                                                戶外主表演場]：</span><br>中午反向切換動線走快捷通道前往北館 3F 表演場。提前十分鐘卡位，完美迎接 <span
-                                                class="text-blue-600">12:30</span> 震撼全場的<span class="underline">海豚表演
-                                                BLUE ECHO (20分鐘)</span>。</li>
-                                        <li><span class="text-slate-900">[13:00 - 14:15 ➔
-                                                留在北館深度體驗]：</span><br>看完海豚秀後，留在北館 3F 原地留守，觀賞緊接在 <span
-                                                class="text-blue-600">13:45</span> 登場的全場最大焦點：<span
-                                                class="underline">逆戟鯨(虎鯨)公開訓練 (15分鐘)</span>！隨後去 2F 透過水底看海豚游泳。</li>
-                                        <li><span class="text-slate-900">[14:30 ➔ 移防回南館 2F 完美結尾]：</span><br>下午離館前回到南館
-                                            2F，剛好趕上 <span class="text-teal-600">14:45</span> 最唯美的<span
-                                                class="underline">旋風沙丁魚龍捲風表演 (5分鐘)</span>。隨後出館準備前往 LaLaport！</li>
-                                    </ol>
-                                </div>
-
-                                <div class="border-t border-slate-200 pt-3 space-y-2">
-                                    <p class="font-black text-rose-600 text-sm flex items-center gap-1.5"><i
-                                            class="fa-solid fa-calendar-day"></i> 2026.7.20 (週一) 官方節目與餵食秀時間表</p>
-                                    <div class="overflow-x-auto text-xs">
-                                        <table class="w-full text-left border-collapse font-bold text-slate-700">
-                                            <thead>
-                                                <tr class="bg-slate-100 text-slate-800 text-xs">
-                                                    <th class="p-2 border">活動名稱 (所需時間)</th>
-                                                    <th class="p-2 border">精確表演時間點</th>
-                                                    <th class="p-2 border">活動指定地點</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="p-2 border text-indigo-600">海豚表演 BLUE ECHO (20分)</td>
-                                                    <td class="p-2 border">10:30 / 12:30 / 14:45 / 16:30 / 19:00</td>
-                                                    <td class="p-2 border">北館 3F / 表演場</td>
-                                                </tr>
-                                                <tr class="bg-slate-50/50">
-                                                    <td class="p-2 border text-indigo-600">逆戟鯨公開訓練 (15分)</td>
-                                                    <td class="p-2 border">11:30 / 13:45 / 17:30</td>
-                                                    <td class="p-2 border">北館 3F / 表演場</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-2 border text-teal-600">旋風沙丁魚(5分)</td>
-                                                    <td class="p-2 border">12:30 / 14:45 / 16:30 / 19:00</td>
-                                                    <td class="p-2 border">南館 2F / 黑潮大水槽</td>
-                                                </tr>
-                                                <tr class="bg-slate-50/50">
-                                                    <td class="p-2 border">企鵝的迷你講座 (15分)</td>
-                                                    <td class="p-2 border">14:45</td>
-                                                    <td class="p-2 border">南館 3F / 企鵝資訊區</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-2 border text-amber-600">餵食時間 (黑潮大水槽) (10分)</td>
-                                                    <td class="p-2 border">10:15</td>
-                                                    <td class="p-2 border">南館 2F / 日本之海</td>
-                                                </tr>
-                                                <tr class="bg-slate-50/50">
-                                                    <td class="p-2 border text-amber-600">餵食時間 (海龜迴游水槽) (10分)</td>
-                                                    <td class="p-2 border">13:45</td>
-                                                    <td class="p-2 border">南館 3F / 赤道之海</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-2 border text-amber-600">餵食時間 (企鵝水槽) (10分)</td>
-                                                    <td class="p-2 border">12:30</td>
-                                                    <td class="p-2 border">南館 3F / 南極之海</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-indigo-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-route"></i></span>
-                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
-                                <span
-                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">14:50
-                                    - 15:00 (車程約 10 分鐘)</span>
-                                <h4 class="font-black text-base text-slate-800 mt-2">下午串接交通：名古屋港水族館 ➔ LaLaport</h4>
-                                <div
-                                    class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
-                                    <div class="flex items-start gap-2">
-                                        <span
-                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
-                                        <p class="text-slate-800">從水族館門口散步至地下鐵 <span
-                                                class="text-indigo-600">「名古屋港」站</span>，搭乘地下鐵名港線（大曾根或大石方向）。</p>
                                     </div>
                                     <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
                                         <span
                                             class="bg-teal-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">下車</span>
-                                        <p class="text-slate-800">僅需搭乘 2 站，於 <span
-                                                class="text-slate-900 font-black">「港區役所」站 [2番出口]</span> 出站，出站後步行約 2
-                                            分鐘即可直達商場入口。</p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <i class="fa-solid fa-ticket text-emerald-500 mt-0.5"></i>
-                                        <p class="text-slate-700">地下鐵單程車資備忘：大人 240 日圓 / 兒童 120 日圓 (直接使用24小時券進出站)</p>
+                                        <p class="text-slate-800">於終點 <span
+                                                class="text-slate-900 font-black">金城ふ頭站</span> 下車出站，出站後順著林蔭高架天橋 <span
+                                                class="text-emerald-600 font-black">步行約 2 分鐘</span> 即可直達磁浮鐵道館正門，完全不怕迷路！
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1082,106 +935,119 @@
 
                         <div class="relative">
                             <span
-                                class="absolute -left-[44px] top-0 bg-amber-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-bag-shopping"></i></span>
-                            <div class="bg-white p-5 rounded-3xl border border-slate-100 shadow-sm space-y-4">
-                                <span class="text-sm font-black bg-amber-50 text-amber-600 px-3 py-1 rounded-full">15:00
-                                    - 19:30 (約4.5小時)</span>
-                                <h4 class="font-black text-xl text-slate-800 mt-1">LaLaport 名古屋港 Aquality 店 <a
-                                        href="https://www.google.com/maps/search/?api=1&query=ららぽーと名古屋みなとアクル斯"
-                                        target="_blank" class="text-sky-500 hover:text-sky-600 ml-1"><i
+                                class="absolute -left-[44px] top-0 bg-rose-400 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-train-subway"></i></span>
+                            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-5">
+                                <span class="text-sm font-black bg-rose-50 text-rose-500 px-3 py-1 rounded-full">10:00 -
+                                    14:00</span>
+                                <h4 class="font-black text-xl text-slate-800 flex items-center">リニア・鉄道館（磁浮鐵道館） <a
+                                        href="http://googleusercontent.com/maps.google.com/5" target="_blank"
+                                        class="text-sky-500 hover:text-sky-600 ml-1.5"><i
                                             class="fa-solid fa-location-dot"></i></a></h4>
-                                <p class="text-sm text-slate-600 font-bold leading-relaxed">
-                                    複合式大型港灣商場，環境寬敞推推車超輕鬆！以下為各樓層精確配置採購指南：</p>
 
-                                <div class="space-y-3 font-bold text-slate-600 text-sm">
-                                    <div class="p-3 bg-indigo-50/50 rounded-xl border border-indigo-100/60">
-                                        <p class="text-indigo-600 font-bold mb-1 flex items-center gap-1.5">[1F
-                                            雜貨美學與生活風格]</p>
-                                        <p class="leading-relaxed font-bold">Loft (美妝文具) ｜ 3 Coins+plus (質感大300円店) ｜
-                                            niko and... ｜ Standard Products (大創高級線)</p>
-                                    </div>
-                                    <div class="p-3 bg-sky-50/50 rounded-xl border border-sky-100/60">
-                                        <p class="text-sky-600 font-bold mb-1 flex items-center gap-1.5">[2F 潮流服飾與時尚必逛]
-                                        </p>
-                                        <p class="leading-relaxed font-bold">GU ｜ 無印良品 ｜ UNIQLO ｜ GAP ｜ Standard
-                                            Products ｜ Francfranc (少女風優雅家居飾品) ｜ ReFa</p>
-                                    </div>
-                                    <div class="p-3 bg-rose-50/50 rounded-xl border border-rose-100/60">
-                                        <p class="text-rose-600 font-bold mb-1 flex items-center gap-1.5">[3F 親子樂園與人氣童裝]
-                                        </p>
-                                        <p class="leading-relaxed font-bold text-rose-600 mb-1">★ ToysRUs (玩具反斗城) —
-                                            玩具種類最齊全，小孩的最愛！</p>
-                                        <p class="leading-relaxed font-bold">F.O.Store ｜ MARKEY'S ｜ petit main ｜ SM2 ｜
-                                            GLOBAL WORK ｜ LOWRYS FARM</p>
-                                    </div>
-                                    <div class="p-3 bg-orange-50/60 rounded-xl border border-orange-200/50 space-y-2">
-                                        <p
-                                            class="text-orange-600 font-bold border-b border-orange-200/60 pb-1 flex items-center gap-1.5">
-                                            <i class="fa-solid fa-utensils"></i> 嚴選親子人氣餐廳必吃推薦：
-                                        </p>
-                                        <div>
-                                            <p class="text-slate-900 font-bold">[1F 獨立店面主題餐廳群]</p>
-                                            <p class="text-slate-600 font-bold leading-relaxed mt-0.5">・牛しゃぶ牛すき食べ放題 但馬屋
-                                                (高CP值火鍋壽喜燒吃到飽)</p>
-                                            <p class="text-slate-600 font-bold leading-relaxed">・いしがまやハンバーグ
-                                                (香氣濃郁的現烤石窯漢堡排)</p>
-                                            <p class="text-slate-600 font-bold leading-relaxed">・ガスト (平價多元的日式家庭式連鎖餐廳)
-                                            </p>
-                                        </div>
-                                        <div class="pt-1.5 border-t border-orange-200/40">
-                                            <p class="text-slate-900 font-bold">[3F 綜合大美食街首選]</p>
-                                            <p class="text-amber-700 font-bold leading-relaxed mt-0.5">🔥 A5等級黑毛和牛專門店
-                                                松阪燒肉 一升びん (大推迴轉松阪牛燒肉/定食)</p>
-                                            <p class="text-amber-700 font-bold leading-relaxed">🔥 雞三和
-                                                (百年老店！必吃純系名古屋地雞極上滑蛋親子丼)</p>
-                                        </div>
-                                    </div>
+                                <div class="p-3 bg-rose-50 rounded-xl text-xs font-bold text-slate-700 space-y-1">
+                                    <p>• <span class="text-rose-700">門票資訊：</span>成人 1,200 日圓 / 中小學生 500 日圓 / 幼兒(3歲以上)
+                                        200 日圓。</p>
+                                    <p>• <span class="text-rose-700">貼心防呆：</span>10:00開館（每週二公休）。入館後連接官方
+                                        Wi-Fi，即可用個人手機免費收聽<span class="text-indigo-600 font-black">中文語音導覽</span>。</p>
+                                </div>
+
+                                <div class="border-t border-slate-100 pt-3 space-y-2 text-sm font-bold text-slate-600">
+                                    <p class="font-black text-orange-600 text-sm"><i class="fa-solid fa-star"></i> 境內大脈絡
+                                        8 大必看亮點：</p>
+                                    <ul class="list-disc list-inside space-y-2 pl-1 text-sm text-slate-600 font-bold">
+                                        <li><span class="text-slate-900">1. 創紀錄三大鎮館之寶：</span>入口黑暗展間內並排著創世界最高速的蒸汽火車
+                                            C62、新幹線試驗車 300X 及超導磁浮列車 MLX01-1，視覺震撼爆表。</li>
+                                        <li><span class="text-slate-900">2. 萬馬奔騰列車展示大廳：</span>停放 20
+                                            多輛實體退役名車。包含元祖「0系」新幹線與極罕見的黃色檢測車「Dr. Yellow」。<span
+                                                class="text-teal-600 font-black">【內行拍照點】：記得上 2 樓俯瞰拍下大廳全景！</span></li>
+                                        <li><span class="text-slate-900">3. 戶外 N700 系車廂體驗：</span>完整保留自由座與商務艙。<span
+                                                class="text-emerald-600">【內行玩法】：可將館內買的火車便當帶入這節冷氣車廂內享用</span>，就像真的在搭新幹線一樣！
+                                        </li>
+                                        <li><span class="text-slate-900">4.
+                                                日本最大級鐵道立體模型：</span>超精緻動態城市天幕模型（包含東京晴空塔、名古屋城等），具備細緻的「日夜光影變化」與動態小火車。</li>
+                                        <li><span class="text-slate-900">5. N700 新幹線模擬駕駛（極搶手）：</span>1:1
+                                            尺寸駕駛室與超大曲面螢幕（15分/500日圓）。名額有限，<span
+                                                class="underline text-slate-900">想當小小列車長記得一開館就先衝去機台搶購</span>！</li>
+                                        <li><span class="text-slate-900">6.
+                                                在來線駕駛與車掌模擬器：</span>可體驗電車加速減速進站（100日圓），或在模擬車廂負責關車門、看大螢幕確認安全並進行車內廣播（500日圓）。
+                                        </li>
+                                        <li><span class="text-slate-900">7. 超導磁浮列車展示室：</span>介紹時速 603 公里的 L0
+                                            系列車，設有「超高速體感迷你劇場」，並能透過趣味互動遊戲了解磁浮懸浮的科學原理。</li>
+                                        <li><span class="text-slate-900">8. 免費客製印名紀念車票：</span>可免費操作復古售票機列印<span
+                                                class="text-rose-600 font-black">印有自己名字（英/片假名）的客製車票</span>，投入實體檢票口會打洞吐回，是非常棒的收藏品！
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="p-4 bg-slate-50 border border-slate-200 rounded-2xl text-xs font-bold text-slate-700 space-y-2">
+                                    <p class="text-slate-900 text-sm font-black"><i class="fa-solid fa-store"></i>
+                                        鐵道美食與必買限定紀念品：</p>
+                                    <p class="leading-relaxed">• <span class="text-rose-700 font-black">必吃「Dr. Yellow
+                                            黃醫生造型便當」：</span>館內餐廳「DELICA
+                                        STATION」販售，配菜豐富（玉子燒、炸物等）且附贈紀念小卡，黃色火車造型外盒吃完可以帶回家當小玩具或鉛筆盒！</p>
+                                    <p class="leading-relaxed">• <span class="text-rose-700 font-black">Museum Shop
+                                            紀念品店：</span>位於出口處，販售大量 JR 東海限定商品、各式新幹線模型玩具、鐵道文具與精緻零食，小心荷包失血。</p>
                                 </div>
                             </div>
                         </div>
-
                         <div class="relative">
                             <span
                                 class="absolute -left-[44px] top-0 bg-indigo-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
                                     class="fa-solid fa-route"></i></span>
                             <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
                                 <span
-                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">19:30
-                                    - 20:00 (車程約 25-30 分鐘)</span>
-                                <h4 class="font-black text-base text-slate-800 mt-2">夜間返航交通：LaLaport ➔ 返回名古屋車站</h4>
+                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">14:00
+                                    - 14:45</span>
+                                <h4 class="font-black text-base text-slate-800 mt-2">下午轉場交通：金城埠頭 ➔ 榮商圈</h4>
+
                                 <div
                                     class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
                                     <div class="flex items-start gap-2">
                                         <span
                                             class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
-                                        <p class="text-slate-800">從商圈步行回地下鐵 <span
-                                                class="text-indigo-600">「港區役所」站</span>，搭乘地下鐵名港線（大曾根或大石方向）至 <span
-                                                class="text-slate-900 font-black">「金山」站</span>。</p>
+                                        <p class="text-slate-800">從磁浮鐵道館步行回 <span
+                                                class="text-slate-900 font-black">金城ふ頭站</span>，搭乘 <span
+                                                class="text-indigo-600 font-black">青波線</span> 返回名古屋車站（車程 24 分鐘）。</p>
                                     </div>
                                     <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
                                         <span
-                                            class="bg-purple-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">轉乘</span>
-                                        <p class="text-slate-800">於金山站內換乘地下鐵名城線（左迴/榮·大曾根方向）搭至 <span
-                                                class="text-slate-900 font-black">「榮」站</span>。</p>
+                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">轉乘</span>
+                                        <p class="text-slate-800">於名古屋站轉乘地下鐵 <span
+                                                class="text-indigo-600 font-black">東山線</span>（往藤之丘方向），坐 2 站至 <span
+                                                class="text-indigo-600 font-black">「榮」站</span> 下車，出站即抵達榮商圈核心。</p>
                                     </div>
                                     <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
                                         <span
-                                            class="bg-indigo-600 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">再轉</span>
-                                        <p class="text-slate-800">最後於榮站內無縫轉搭地下鐵東山線（往高畑行方向），一路坐回終點 <span
-                                                class="text-indigo-600 font-black">「名古屋」站</span> 漫步回飯店。</p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <i class="fa-solid fa-ticket text-emerald-500 mt-0.5"></i>
-                                        <p class="text-slate-700">地下鐵全程乘車費用：大人 270 日圓 / 兒童 130 日圓 (繼續刷24小時券免扣款)</p>
+                                            class="bg-teal-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">車資</span>
+                                        <p class="text-slate-700">青波線單程 ¥360 + 地鐵單程 ¥210（地鐵部分可直接刷交通 IC 卡）。</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[44px] top-0 bg-pink-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-bag-shopping"></i></span>
+                            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4">
+                                <span class="text-sm font-black bg-pink-50 text-pink-600 px-3 py-1 rounded-full">14:45 -
+                                    20:30</span>
+                                <h4 class="font-black text-xl text-slate-800 flex items-center">榮商圈頂級百貨血拼與美食巡禮</h4>
+                                <p class="text-sm text-slate-600 font-bold leading-relaxed">
+                                    榮商圈是名古屋最精華的百貨戰區！我們將在此逛街、血拼、享用美味晚餐。
+                                </p>
+                                <div class="pt-2">
+                                    <button onclick="switchTab('sakae')"
+                                        class="inline-flex items-center justify-center w-full sm:w-auto bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-black text-sm px-6 py-3 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95">
+                                        <i class="fa-solid fa-store mr-2"></i> 點此查看「榮商圈 7 大百貨美食攻略」詳細分頁
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
                 <div id="day-4" class="day-panel hidden">
                     <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-indigo-500 mb-6">
                         <h2 class="text-2xl font-black text-slate-800">7/21 (二) 名古屋樂高樂園（LEGOLAND Japan）消暑放電一日遊</h2>
@@ -1519,10 +1385,208 @@
 
                 <div id="day-5" class="day-panel hidden">
                     <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-purple-500 mb-6">
-                        <h2 class="text-2xl font-black text-slate-800">7/22 (三) 國寶犬山城下町與巨型 MOZO 購物避暑一日遊</h2>
-                        <p class="text-slate-500 font-bold text-sm">第五站：極陡木天守特攻、老街串物美食，與愛知怪獸級商場大滿足</p>
+                        <h2 class="text-2xl font-black text-slate-800">7/22 (三) 科學奇觀與大須商店街邊吃邊逛</h2>
+                        <p class="text-slate-500 font-bold text-sm">第五站：世界之最星象劇場與超高能科學實驗大特攻</p>
                     </div>
                     <div class="relative pl-8 border-l-4 border-purple-100 space-y-10 ml-4">
+
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[44px] top-0 bg-purple-600 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-atom"></i></span>
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                                <span class="text-sm font-black bg-blue-50 text-blue-600 px-3 py-1 rounded-full">09:30 -
+                                    13:30 (約4小時)</span>
+                                <h4 class="font-black text-xl text-slate-800 flex flex-wrap items-center gap-2">
+                                    名古屋市科學館
+                                    <a href="https://www.google.com/maps/search/?api=1&query=名古屋市科學館" target="_blank"
+                                        class="text-sky-500 text-base" title="Google 地圖導航"><i
+                                            class="fa-solid fa-location-dot"></i></a>
+                                    <a href="https://ticket.ncsm.city.nagoya.jp/" target="_blank"
+                                        class="text-indigo-500 text-base" title="官方線上購票"><i
+                                            class="fa-solid fa-ticket"></i></a>
+                                </h4>
+
+                                <div class="p-3 bg-blue-50 rounded-xl text-sm font-bold text-slate-700 space-y-1">
+                                    <p>• 官方線上購票：<a href="https://ticket.ncsm.city.nagoya.jp/" target="_blank"
+                                            class="text-indigo-600 hover:underline inline-flex items-center gap-1 font-black"><i
+                                                class="fa-solid fa-ticket text-indigo-500"></i>名古屋市科學館官方購票系統</a></p>
+                                    <p>• 基本票價：(展示館+天文館) 大人 800日圓 / 國中生以下(7歲男童) <span
+                                            class="text-emerald-600 font-extrabold">完全免費</span>。</p>
+                                    <p>• 再入館防呆：蓋上手背章後可自由進出。肚子餓了可先出館到外面的白川公園、榮商圈或大須商店街吃飯，再回館繼續玩。</p>
+                                </div>
+
+
+                                <div class="border-t border-slate-100 pt-3 space-y-3 text-sm font-bold text-slate-600">
+                                    <p class="font-black text-orange-600 text-sm flex items-center gap-1.5"><i
+                                            class="fa-solid fa-star"></i> 🌟 4 大必看重點（三大實驗＋鎮館之寶）：</p>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 font-bold text-slate-600 text-sm">
+                                        <div class="p-3 bg-indigo-50/50 rounded-xl border border-indigo-100/60">
+                                            <p class="text-indigo-600 font-bold mb-1 flex items-center gap-1"><span
+                                                    class="text-blue-500">❄️</span> 極寒實驗室 (理工館 5F)</p>
+                                            <p class="text-slate-600 font-bold leading-relaxed text-sm">穿上防寒衣走進真實零下 30
+                                                度酷寒房間，體感極震撼、呼吸秒結冰，還能看夢幻極光影像！<span
+                                                    class="text-red-500 font-extrabold">【極難搶！開館立刻直衝 5 樓領取整理券】</span></p>
+                                        </div>
+                                        <div class="p-3 bg-sky-50/50 rounded-xl border border-sky-100/60">
+                                            <p class="text-sky-600 font-bold mb-1 flex items-center gap-1"><span
+                                                    class="text-amber-500">⚡</span> 放電實驗室 (理工館 4F)</p>
+                                            <p class="text-slate-600 font-bold leading-relaxed text-sm">4公尺高特斯拉線圈在眼前放出
+                                                120萬伏特 的超強電弧與震耳欲聾的閃電聲！平日開演前15分鐘現場排隊，週末假日發整理券，衝完5F記得馬上下4F確認方式。</p>
+                                        </div>
+                                        <div class="p-3 bg-rose-50/50 rounded-xl border border-rose-100/60">
+                                            <p class="text-rose-600 font-bold mb-1 flex items-center gap-1"><span
+                                                    class="text-orange-500">🌪️</span> 龍捲風實驗室 (理工館 3F)</p>
+                                            <p class="text-slate-600 font-bold leading-relaxed text-sm">高達 9
+                                                公尺的巨型裝置，現場從無到有製造出直通天花板的壯觀白色人造龍捲風。採定時表演不需券。<span
+                                                    class="text-indigo-600 font-extrabold">★ 內行看點在 4
+                                                    樓欄杆往下俯瞰，拍照錄影視野最完美！</span></p>
+                                        </div>
+                                        <div class="p-3 bg-orange-50/60 rounded-xl border border-orange-200/50">
+                                            <p class="text-orange-600 font-bold mb-1 flex items-center gap-1"><span
+                                                    class="text-purple-500">🌌</span> 天文館星象劇場 (天文館 6F)</p>
+                                            <p class="text-slate-600 font-bold leading-relaxed text-sm">直徑 35
+                                                公尺金氏世界紀錄「世界最大天文館圓頂 NTP Planet」。星空劇場極致逼真沉浸！<span
+                                                    class="text-purple-700 font-extrabold">【已購買已劃位場次：11:20 ~
+                                                    12:10】</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2 text-sm text-slate-700 font-bold">
+                                    <p class="font-black text-indigo-600 flex items-center gap-1.5 text-sm"><i
+                                            class="fa-solid fa-compass"></i> 7/22 推薦：【開館特攻 ➔ 配合 11:20 天文館】最佳流暢動線</p>
+                                    <p class="pl-1 font-bold text-sm text-slate-600 leading-relaxed">
+                                        為了確保 11:20 準時進入天文館，同時不浪費排隊時間，清晨開館黃金一小時請務必遵照以下特攻策略，拿到實驗券後再展開豐富的互動體驗：
+                                    </p>
+                                    <ol
+                                        class="list-decimal list-inside space-y-2.5 pl-1 text-sm font-bold text-slate-700">
+                                        <li><span class="text-slate-900">[09:00 - 09:15 ➔
+                                                提早卡位]：</span><br>抵達白川公園科學館門口排隊。09:30 開館入內迅速換好或買好套票。</li>
+                                        <li><span class="text-slate-900">[09:35 ➔ 搶券特攻第一步]：</span><br>不要猶豫，立刻搭電梯直衝 <span
+                                                class="text-red-500 font-bold">【理工館 5 樓】</span> 搶領「極寒實驗室」的當日整理券！</li>
+                                        <li><span class="text-slate-900">[09:45 ➔ 搶券特攻第二步]：</span><br>成功拿券後，馬上走安全梯下到
+                                            <span class="text-amber-600 font-bold">【理工館 4 樓】</span>
+                                            預約或確認「放電實驗室」的平日/假日場次排隊時間。
+                                        </li>
+                                        <li><span class="text-slate-900">[10:00 - 11:00 ➔ 5 樓與 2
+                                                樓互動體驗]：</span><br>依據預約到的極寒實驗室時間插空檔體驗。空檔先觀賞 5 樓化學元素實體化的「元素週期表實物牆」，或帶孩子去 2
+                                            樓玩超大「水之廣場」的水循環互動機關。</li>
+                                        <li><span class="text-slate-900">[11:00 - 12:10 ➔ 6
+                                                樓天文館星象劇場大沉浸]：</span><br>11:00 前提早搭電梯上 6 樓，先稍微逛一下太空探索與地球科學。解說前 10
+                                            分鐘務必至天文館入口排隊檢票，<span class="text-indigo-600 font-extrabold">享用 11:20 ~ 12:10
+                                                的世界最大星象球體沉浸式星空劇場</span>。</li>
+                                        <li><span class="text-slate-900">[12:15 - 12:45 ➔ 4
+                                                樓放電秀與俯瞰大龍捲]：</span><br>劇場結束後走樓梯下至 4 樓，體驗震撼的「放電實驗室」。結束後記得站在 4 樓欄杆處「準備俯瞰 3
+                                            樓的龍捲風表演」，這裡擁有全館最棒的龍捲風錄影視角！</li>
+                                        <li><span class="text-slate-900">[12:45 - 13:15 ➔ 3 樓近距離龍捲風與模型火車]：</span><br>下至
+                                            3 樓近距離看龍捲風生成，並觀賞小車迷會瘋掉的「超巨大都市模型列車」定時運行，順便看看房屋剖面結構。</li>
+                                        <li><span class="text-slate-900">[13:15 - 13:30 ➔ 2 樓恐龍尋寶與 1
+                                                樓挖寶完美結尾]：</span><br>到生命館尋找日劇《破案天才伽利略2》取景的超巨大馬普龍恐龍骨架與福山雅治簽名！最後到 1
+                                            樓紀念品店挖寶元素週期表毛巾、公式餅乾與試管糖果，隨後出館準備前往大須商店街！</li>
+                                    </ol>
+                                </div>
+
+                                <div class="mt-4 p-4 bg-slate-50 rounded-2xl text-sm border border-slate-200 font-bold">
+                                    <div class="flex items-start gap-2">
+                                        <span
+                                            class="bg-purple-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">步行</span>
+                                        <p class="text-slate-800">離開科學館後，輕鬆漫步穿過白川公園，朝東南方向步行約 10~15
+                                            分鐘（或至伏見站搭乘地鐵鶴舞線至大須觀音站），即可無縫串接下午的大須商店街行程。</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[44px] top-0 bg-purple-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-torii-gate"></i></span>
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-5">
+                                <span class="text-sm font-black bg-purple-50 text-purple-600 px-3 py-1 rounded-full">14:00
+                                    - 18:00 (約4小時)</span>
+                                <h4 class="font-black text-xl text-slate-800 flex flex-wrap items-center gap-2">
+                                    大須文化與美食漫步（大須觀音 ➔ 商店街 ➔ 三輪神社）
+                                    <a href="https://www.google.com/maps/search/?api=1&query=大須觀音" target="_blank"
+                                        class="text-sky-500 text-base" title="Google 地圖導航"><i
+                                            class="fa-solid fa-location-dot"></i></a>
+                                </h4>
+
+                                <div
+                                    class="bg-slate-50/80 p-4 rounded-2xl border border-slate-200/60 space-y-2 text-sm text-slate-700 font-bold">
+                                    <p class="font-black text-amber-700 text-sm flex items-center gap-1.5"><i
+                                            class="fa-solid fa-gopuram"></i> 🏮 第一站：大須觀音（日本三大觀音之一 / 參觀免費）</p>
+                                    <p class="text-slate-500 text-xs font-semibold pl-1">從科學館穿過白川公園南下步行約 10~12 分鐘即可抵達。
+                                    </p>
+                                    <ul class="list-disc list-inside space-y-1 pl-1 text-slate-600 font-bold">
+                                        <li><span class="text-slate-900">宏偉大悲殿：</span>主殿正面懸掛著類似淺草寺的超巨大大紅燈籠，是必拍的經典歷史地標。
+                                        </li>
+                                        <li><span
+                                                class="text-slate-900">壯觀鴿子海：</span>廣場有極多鴿子，現場可買飼料(約50日圓)讓鴿子停在手上餵食，小朋友超愛！
+                                        </li>
+                                        <li><span class="text-slate-900">國寶藏書閣：</span>真福寺文庫珍藏萬卷古籍，包含日本最古老歷史書《古事記》的現存古寫本。
+                                        </li>
+                                        <li><span class="text-indigo-600">※ 隱藏市集：</span>若日期剛好碰上每月 18、28
+                                            日，廟前廣場會舉辦熱鬧的「骨董市集」可淘寶。</li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-slate-50/80 p-4 rounded-2xl border border-slate-200/60 space-y-2 text-sm text-slate-700 font-bold">
+                                    <p class="font-black text-emerald-700 text-sm flex items-center gap-1.5"><i
+                                            class="fa-solid fa-shop"></i> 🛍️ 第二站：大須商店街（有天棚的日式庶民美食天堂）</p>
+                                    <p class="text-slate-500 text-xs font-semibold pl-1">由大須觀音旁直接開逛：仁王門通 ➔ 東仁王門通 ➔ 萬松寺通。
+                                    </p>
+                                    <ul class="list-disc list-inside space-y-1 pl-1 text-slate-600 font-bold">
+                                        <li><span class="text-slate-900">全天候拱廊：</span>具備防曬、防雨的巨型採光天棚街道，縱橫交錯聚集超過 1,200
+                                            家店舖。</li>
+                                        <li><span
+                                                class="text-slate-900">美食吃貨街：</span>沿路邊走邊吃日式炸雞、鯛魚燒、烤糰子、現刨冰品，大人小孩補充體力首選。
+                                        </li>
+                                        <li><span
+                                                class="text-slate-900">多元文化交織：</span>結合傳統小吃、文青古著屋、異國料理與動漫模型店，被譽為名古屋的秋葉原。
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="bg-slate-50/80 p-4 rounded-2xl border border-slate-200/60 space-y-2 text-sm text-slate-700 font-bold">
+                                    <p class="font-black text-rose-600 text-sm flex items-center gap-1.5"><i
+                                            class="fa-solid fa-heart"></i> 🐇 第三站：三輪神社（日本最萌兔子神社 / 追星推し活聖地）</p>
+                                    <p class="text-slate-500 text-xs font-semibold pl-1">
+                                        位於商店街東側末端（接近矢場町方向），充滿粉紅泡泡的可愛打卡點。</p>
+                                    <ul class="list-disc list-inside space-y-1 pl-1 text-slate-600 font-bold">
+                                        <li><span
+                                                class="text-slate-900">尋找隱藏福兔：</span>門口有「幸福福兔」石雕，據說摸摸牠與自己相同痛點的部位能袪病好運；境內各角落藏著各種木雕小兔子，可帶孩子一起尋寶拍照。
+                                        </li>
+                                        <li><span
+                                                class="text-slate-900">追星神席祈願：</span>櫻花妹爆紅景點！販售十幾種代表偶像的「推し色（成員色）御守」與心形相片御守，大批粉絲會來掛「兔子繪馬」祈求抽中演唱會前排神席。
+                                        </li>
+                                        <li><span
+                                                class="text-slate-900">華麗御朱印：</span>隨季節與節慶（如櫻花、新年）推出超精緻的「彩色立體剪紙御朱印」，款式多達十幾種，精美如藝術品。
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div
+                                    class="p-3 bg-purple-50/60 rounded-2xl text-xs font-bold border border-purple-100 text-slate-700">
+                                    <p class="flex items-center gap-1"><i class="fa-solid fa-train_subway"></i> 🚇
+                                        傍晚回程：三輪神社步行約 5~7 分鐘即可抵達地鐵名城線「矢場町站」。</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="day-6" class="day-panel hidden">
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-yellow-500 mb-6">
+                        <h2 class="text-2xl font-black text-slate-800">7/23 (四) 國寶犬山城下町與巨型 MOZO 購物避暑一日遊</h2>
+                        <p class="text-slate-500 font-bold text-sm">第六站：極陡木天守特攻、老街串物美食，與愛知怪獸級商場大滿足</p>
+                    </div>
+                    <div class="relative pl-8 border-l-4 border-yellow-100 space-y-10 ml-4">
 
                         <div
                             class="bg-amber-50 border-2 border-dashed border-amber-400 rounded-2xl p-4 text-slate-700 font-bold text-sm">
@@ -1748,7 +1812,7 @@
                                     <p class="text-slate-800 border-t border-dashed border-slate-200 pt-2"><span
                                             class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs">搭乘</span>
                                         搭乘名鐵犬山線（急行/普通），一路直達返回 <span
-                                            class="text-indigo-600 font-black">「名鐵名古屋站」</span>，漫步走回飯店，完美結束精彩的第五天！</p>
+                                            class="text-indigo-600 font-black">「名鐵名古屋站」</span>，漫步走回飯店，完美結束精彩的第六天！</p>
                                 </div>
                             </div>
                         </div>
@@ -1756,12 +1820,309 @@
                     </div>
                 </div>
 
-                <div id="day-6" class="day-panel hidden">
-                    <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-yellow-500 mb-6">
-                        <h2 class="text-2xl font-black text-slate-800">7/23 (四) 汽車科技歷史、神聖神宮一日遊</h2>
-                        <p class="text-slate-500 font-bold text-sm">第六站：機械手臂產線震撼秀、三大神宮參拜</p>
+                <div id="day-7" class="day-panel hidden">
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-teal-500 mb-6">
+                        <h2 class="text-2xl font-black text-slate-800">7/24 (五) 海洋生物與港灣購物</h2>
+                        <p class="text-slate-500 font-bold text-sm">第七站：超震撼虎鯨表演與港灣大型購物商場</p>
                     </div>
-                    <div class="relative pl-8 border-l-4 border-yellow-100 space-y-10 ml-4">
+
+                    <div class="relative pl-8 border-l-4 border-teal-100 space-y-10 ml-4">
+                        <div
+                            class="bg-blue-50 border-2 border-dashed border-blue-400 rounded-2xl p-4 text-slate-700 font-bold text-sm">
+                            <p class="text-blue-700 font-black text-base flex items-center gap-1.5 mb-1"><i
+                                    class="fa-solid fa-ticket"></i> 🎫 親子神券推薦（於名古屋車站購買）：</p>
+                            <p class="mb-2">本日建議購買 <span
+                                    class="bg-blue-200 px-1 rounded text-slate-950 font-black">「地下鐵全線 24
+                                    小時券」</span>，搭乘地鐵全線超划算！</p>
+                            <ul class="list-disc list-inside text-xs font-bold text-slate-600 space-y-1 pl-1">
+                                <li><span class="text-slate-900">① 票券價格：</span>成人 ¥760 / 兒童 ¥380</li>
+                                <li><span class="text-slate-900">② 適用範圍：</span>名古屋市營地下鐵全線</li>
+                                <li><span class="text-slate-900">③ 票券特色：</span>從首次通過檢票口（刷卡）起算的 24 小時內有效，跨日使用彈性極大。</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[44px] top-0 bg-indigo-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-route"></i></span>
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
+                                <span
+                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">08:54
+                                    - 09:22 (車程28分鐘)</span>
+                                <h4 class="font-black text-base text-slate-800 mt-2">晨間出發交通：名古屋站 ➔ 名古屋港站</h4>
+                                <div
+                                    class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
+                                    <div class="flex items-start gap-2">
+                                        <span
+                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
+                                        <p class="text-slate-800">從飯店步行至地下鐵 <span
+                                                class="text-indigo-600">「名古屋」站</span>，搭乘地下鐵東山線（藤が丘行）至 <span
+                                                class="text-slate-900 font-black">「榮」站</span>。</p>
+                                    </div>
+                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
+                                        <span
+                                            class="bg-purple-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">轉乘</span>
+                                        <p class="text-slate-800">於榮站內換乘地下鐵名城線上前津・金山方面（名古屋港行方向）搭至 <span
+                                                class="text-slate-900 font-black">「名古屋港」站</span>。</p>
+                                    </div>
+                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
+                                        <i class="fa-solid fa-ticket text-emerald-500 mt-0.5"></i>
+                                        <p class="text-slate-700">地下鐵全程乘車費用：大人 270 日圓 / 兒童 130 日圓 (直接使用剛買好的24小時券插卡搭乘)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[44px] top-0 bg-blue-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-fish"></i></span>
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                                <span class="text-sm font-black bg-blue-50 text-blue-600 px-3 py-1 rounded-full">09:30 -
+                                    14:30 (約5小時)</span>
+                                <h4 class="font-black text-xl text-slate-800 flex flex-wrap items-center gap-2">
+                                    名古屋港水族館
+                                    <a href="https://nagoyaaqua.jp/" target="_blank"
+                                        class="text-xs bg-blue-100 text-blue-700 px-2.5 py-1 rounded-md hover:bg-blue-200"
+                                        title="打開官方網站"><i class="fa-solid fa-globe mr-1"></i>官方網站</a>
+                                    <a href="https://nagoyaaqua.jp/traditional-chinese/info_map_zh.pdf" target="_blank"
+                                        class="text-xs bg-emerald-100 text-emerald-700 px-2.5 py-1 rounded-md hover:bg-emerald-200"
+                                        title="打開繁中館內地圖 PDF"><i class="fa-solid fa-map mr-1"></i>繁中館內地圖</a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=名古屋港水族館" target="_blank"
+                                        class="text-sky-500 text-base" title="Google 地圖導航"><i
+                                            class="fa-solid fa-location-dot"></i></a>
+                                </h4>
+                                <div class="p-3 bg-blue-50 rounded-xl text-sm font-bold text-slate-700 space-y-1">
+                                    <p>• 門票費用：大人 2,030日圓 / 兒童（7歲小學生）1,010日圓。</p>
+                                    <p>• 設施分布：入館入口位於北館 2F，本路線引導直接穿過通道前往南館開始遊覽，隨後再移至北館觀賞大秀。</p>
+                                </div>
+
+                                <div
+                                    class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2 text-sm text-slate-700 font-bold">
+                                    <p class="font-black text-indigo-600 flex items-center gap-1.5 text-sm"><i
+                                            class="fa-solid fa-compass"></i> 7/20 推薦：【先南館 ➔ 再北館】黃金流暢動線</p>
+                                    <p class="pl-1 font-bold text-sm text-slate-600 leading-relaxed">
+                                        為了在清晨避開剛開館時北館主劇場的擁擠卡位人潮，並完美配合 7/20 官方公告的表演時間，最順暢、體力消耗最少的無縫路線如下：
+                                    </p>
+                                    <ol
+                                        class="list-decimal list-inside space-y-2.5 pl-1 text-sm font-bold text-slate-700">
+                                        <li><span class="text-slate-900">[09:30 入館 ➔ 直奔南館 2F]：</span><br>一入館直接走進南館
+                                            2F「日本之海」區。在 <span class="text-amber-600">10:15</span> 觀賞第一個精彩亮點：<span
+                                                class="underline">黑潮大水槽餵食時間 (10分鐘)</span>。</li>
+                                        <li><span class="text-slate-900">[10:30 - 12:20 ➔
+                                                繼續漫步南館]：</span><br>沿著南館單向動線往上逛，在 <span
+                                                class="text-amber-600">11:30</span> 前抵達南館 3F「南極之海」區，欣賞圓滾滾的企鵝家族與海龜。</li>
+                                        <li><span class="text-slate-900">[12:20 ➔ 轉戰北館 3F
+                                                戶外主表演場]：</span><br>中午反向切換動線走快捷通道前往北館 3F 表演場。提前十分鐘卡位，完美迎接 <span
+                                                class="text-blue-600">12:30</span> 震撼全場的<span class="underline">海豚表演
+                                                BLUE ECHO (20分鐘)</span>。</li>
+                                        <li><span class="text-slate-900">[13:00 - 14:15 ➔
+                                                留在北館深度體驗]：</span><br>看完海豚秀後，留在北館 3F 原地留守，觀賞緊接在 <span
+                                                class="text-blue-600">13:45</span> 登場的全場最大焦點：<span
+                                                class="underline">逆戟鯨(虎鯨)公開訓練 (15分鐘)</span>！隨後去 2F 透過水底看海豚游泳。</li>
+                                        <li><span class="text-slate-900">[14:30 ➔ 移防回南館 2F 完美結尾]：</span><br>下午離館前回到南館
+                                            2F，剛好趕上 <span class="text-teal-600">14:45</span> 最唯美的<span
+                                                class="underline">旋風沙丁魚龍捲風表演 (5分鐘)</span>。隨後出館準備前往 LaLaport！</li>
+                                    </ol>
+                                </div>
+
+                                <div class="border-t border-slate-200 pt-3 space-y-2">
+                                    <p class="font-black text-rose-600 text-sm flex items-center gap-1.5"><i
+                                            class="fa-solid fa-calendar-day"></i> 2026.7.20 (週一) 官方節目與餵食秀時間表</p>
+                                    <div class="overflow-x-auto text-xs">
+                                        <table class="w-full text-left border-collapse font-bold text-slate-700">
+                                            <thead>
+                                                <tr class="bg-slate-100 text-slate-800 text-xs">
+                                                    <th class="p-2 border">活動名稱 (所需時間)</th>
+                                                    <th class="p-2 border">精確表演時間點</th>
+                                                    <th class="p-2 border">活動指定地點</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-2 border text-indigo-600">海豚表演 BLUE ECHO (20分)</td>
+                                                    <td class="p-2 border">10:30 / 12:30 / 14:45 / 16:30 / 19:00</td>
+                                                    <td class="p-2 border">北館 3F / 表演場</td>
+                                                </tr>
+                                                <tr class="bg-slate-50/50">
+                                                    <td class="p-2 border text-indigo-600">逆戟鯨公開訓練 (15分)</td>
+                                                    <td class="p-2 border">11:30 / 13:45 / 17:30</td>
+                                                    <td class="p-2 border">北館 3F / 表演場</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-2 border text-teal-600">旋風沙丁魚(5分)</td>
+                                                    <td class="p-2 border">12:30 / 14:45 / 16:30 / 19:00</td>
+                                                    <td class="p-2 border">南館 2F / 黑潮大水槽</td>
+                                                </tr>
+                                                <tr class="bg-slate-50/50">
+                                                    <td class="p-2 border">企鵝的迷你講座 (15分)</td>
+                                                    <td class="p-2 border">14:45</td>
+                                                    <td class="p-2 border">南館 3F / 企鵝資訊區</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-2 border text-amber-600">餵食時間 (黑潮大水槽) (10分)</td>
+                                                    <td class="p-2 border">10:15</td>
+                                                    <td class="p-2 border">南館 2F / 日本之海</td>
+                                                </tr>
+                                                <tr class="bg-slate-50/50">
+                                                    <td class="p-2 border text-amber-600">餵食時間 (海龜迴游水槽) (10分)</td>
+                                                    <td class="p-2 border">13:45</td>
+                                                    <td class="p-2 border">南館 3F / 赤道之海</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-2 border text-amber-600">餵食時間 (企鵝水槽) (10分)</td>
+                                                    <td class="p-2 border">12:30</td>
+                                                    <td class="p-2 border">南館 3F / 南極之海</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[44px] top-0 bg-indigo-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-route"></i></span>
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
+                                <span
+                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">14:50
+                                    - 15:00 (車程約 10 分鐘)</span>
+                                <h4 class="font-black text-base text-slate-800 mt-2">下午串接交通：名古屋港水族館 ➔ LaLaport</h4>
+                                <div
+                                    class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
+                                    <div class="flex items-start gap-2">
+                                        <span
+                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
+                                        <p class="text-slate-800">從水族館門口散步至地下鐵 <span
+                                                class="text-indigo-600">「名古屋港」站</span>，搭乘地下鐵名港線（大曾根或大石方向）。</p>
+                                    </div>
+                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
+                                        <span
+                                            class="bg-teal-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">下車</span>
+                                        <p class="text-slate-800">僅需搭乘 2 站，於 <span
+                                                class="text-slate-900 font-black">「港區役所」站 [2番出口]</span> 出站，出站後步行約 2
+                                            分鐘即可直達商場入口。</p>
+                                    </div>
+                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
+                                        <i class="fa-solid fa-ticket text-emerald-500 mt-0.5"></i>
+                                        <p class="text-slate-700">地下鐵單程車資備忘：大人 240 日圓 / 兒童 120 日圓 (直接使用24小時券進出站)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[44px] top-0 bg-amber-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-bag-shopping"></i></span>
+                            <div class="bg-white p-5 rounded-3xl border border-slate-100 shadow-sm space-y-4">
+                                <span class="text-sm font-black bg-amber-50 text-amber-600 px-3 py-1 rounded-full">15:00
+                                    - 19:30 (約4.5小時)</span>
+                                <h4 class="font-black text-xl text-slate-800 mt-1">LaLaport 名古屋港 Aquality 店 <a
+                                        href="https://www.google.com/maps/search/?api=1&query=ららぽーと名古屋みなとアクル斯"
+                                        target="_blank" class="text-sky-500 hover:text-sky-600 ml-1"><i
+                                            class="fa-solid fa-location-dot"></i></a></h4>
+                                <p class="text-sm text-slate-600 font-bold leading-relaxed">
+                                    複合式大型港灣商場，環境寬敞推推車超輕鬆！以下為各樓層精確配置採購指南：</p>
+
+                                <div class="space-y-3 font-bold text-slate-600 text-sm">
+                                    <div class="p-3 bg-indigo-50/50 rounded-xl border border-indigo-100/60">
+                                        <p class="text-indigo-600 font-bold mb-1 flex items-center gap-1.5">[1F
+                                            雜貨美學與生活風格]</p>
+                                        <p class="leading-relaxed font-bold">Loft (美妝文具) ｜ 3 Coins+plus (質感大300円店) ｜
+                                            niko and... ｜ Standard Products (大創高級線)</p>
+                                    </div>
+                                    <div class="p-3 bg-sky-50/50 rounded-xl border border-sky-100/60">
+                                        <p class="text-sky-600 font-bold mb-1 flex items-center gap-1.5">[2F 潮流服飾與時尚必逛]
+                                        </p>
+                                        <p class="leading-relaxed font-bold">GU ｜ 無印良品 ｜ UNIQLO ｜ GAP ｜ Standard
+                                            Products ｜ Francfranc (少女風優雅家居飾品) ｜ ReFa</p>
+                                    </div>
+                                    <div class="p-3 bg-rose-50/50 rounded-xl border border-rose-100/60">
+                                        <p class="text-rose-600 font-bold mb-1 flex items-center gap-1.5">[3F 親子樂園與人氣童裝]
+                                        </p>
+                                        <p class="leading-relaxed font-bold text-rose-600 mb-1">★ ToysRUs (玩具反斗城) —
+                                            玩具種類最齊全，小孩的最愛！</p>
+                                        <p class="leading-relaxed font-bold">F.O.Store ｜ MARKEY'S ｜ petit main ｜ SM2 ｜
+                                            GLOBAL WORK ｜ LOWRYS FARM</p>
+                                    </div>
+                                    <div class="p-3 bg-orange-50/60 rounded-xl border border-orange-200/50 space-y-2">
+                                        <p
+                                            class="text-orange-600 font-bold border-b border-orange-200/60 pb-1 flex items-center gap-1.5">
+                                            <i class="fa-solid fa-utensils"></i> 嚴選親子人氣餐廳必吃推薦：
+                                        </p>
+                                        <div>
+                                            <p class="text-slate-900 font-bold">[1F 獨立店面主題餐廳群]</p>
+                                            <p class="text-slate-600 font-bold leading-relaxed mt-0.5">・牛しゃぶ牛すき食べ放題 但馬屋
+                                                (高CP值火鍋壽喜燒吃到飽)</p>
+                                            <p class="text-slate-600 font-bold leading-relaxed">・いしがまやハンバーグ
+                                                (香氣濃郁的現烤石窯漢堡排)</p>
+                                            <p class="text-slate-600 font-bold leading-relaxed">・ガスト (平價多元的日式家庭式連鎖餐廳)
+                                            </p>
+                                        </div>
+                                        <div class="pt-1.5 border-t border-orange-200/40">
+                                            <p class="text-slate-900 font-bold">[3F 綜合大美食街首選]</p>
+                                            <p class="text-amber-700 font-bold leading-relaxed mt-0.5">🔥 A5等級黑毛和牛專門店
+                                                松阪燒肉 一升びん (大推迴轉松阪牛燒肉/定食)</p>
+                                            <p class="text-amber-700 font-bold leading-relaxed">🔥 雞三和
+                                                (百年老店！必吃純系名古屋地雞極上滑蛋親子丼)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <span
+                                class="absolute -left-[44px] top-0 bg-indigo-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
+                                    class="fa-solid fa-route"></i></span>
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
+                                <span
+                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">19:30
+                                    - 20:00 (車程約 25-30 分鐘)</span>
+                                <h4 class="font-black text-base text-slate-800 mt-2">夜間返航交通：LaLaport ➔ 返回名古屋車站</h4>
+                                <div
+                                    class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
+                                    <div class="flex items-start gap-2">
+                                        <span
+                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
+                                        <p class="text-slate-800">從商圈步行回地下鐵 <span
+                                                class="text-indigo-600">「港區役所」站</span>，搭乘地下鐵名港線（大曾根或大石方向）至 <span
+                                                class="text-slate-900 font-black">「金山」站</span>。</p>
+                                    </div>
+                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
+                                        <span
+                                            class="bg-purple-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">轉乘</span>
+                                        <p class="text-slate-800">於金山站內換乘地下鐵名城線（左迴/榮·大曾根方向）搭至 <span
+                                                class="text-slate-900 font-black">「榮」站</span>。</p>
+                                    </div>
+                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
+                                        <span
+                                            class="bg-indigo-600 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">再轉</span>
+                                        <p class="text-slate-800">最後於榮站內無縫轉搭地下鐵東山線（往高畑行方向），一路坐回終點 <span
+                                                class="text-indigo-600 font-black">「名古屋」站</span> 漫步回飯店。</p>
+                                    </div>
+                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
+                                        <i class="fa-solid fa-ticket text-emerald-500 mt-0.5"></i>
+                                        <p class="text-slate-700">地下鐵全程乘車費用：大人 270 日圓 / 兒童 130 日圓 (繼續刷24小時券免扣款)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="day-8" class="day-panel hidden">
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-pink-400 mb-6">
+                        <h2 class="text-2xl font-black text-slate-800">7/25 (六) 汽車科技歷史、神聖神宮一日遊</h2>
+                        <p class="text-slate-500 font-bold text-sm">第八站：機械手臂產線震撼秀、三大神宮參拜</p>
+                    </div>
+                    <div class="relative pl-8 border-l-4 border-pink-100 space-y-10 ml-4">
 
                         <div class="relative">
                             <span
@@ -1799,7 +2160,9 @@
                                 class="absolute -left-[44px] top-0 bg-yellow-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
                                     class="fa-solid fa-gears"></i></span>
                             <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-5">
-                                <span class="text-sm font-black bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full">09:30 -
+                                <span
+                                    class="text-sm font-black bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full">09:30
+                                    -
                                     13:00</span>
                                 <h4 class="font-black text-xl text-slate-800 flex items-center">トヨタ産業技術記念館 (豐田產業技術紀念館)
                                     <a href="https://www.google.com/maps/search/?api=1&query=トヨタ産業技術記念館" target="_blank"
@@ -1893,7 +2256,9 @@
                                 class="absolute -left-[44px] top-0 bg-yellow-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
                                     class="fa-solid fa-torii-gate"></i></span>
                             <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-5">
-                                <span class="text-sm font-black bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full">13:30 -
+                                <span
+                                    class="text-sm font-black bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full">13:30
+                                    -
                                     16:30</span>
                                 <h4 class="font-black text-xl text-slate-800 flex items-center">熱田神宮參拜與蓬萊軒晚間場登記 <a
                                         href="https://www.google.com/maps/search/?api=1&query=熱田神宮" target="_blank"
@@ -2064,7 +2429,8 @@
                                 <p class="text-sm text-slate-600 font-bold mt-1">返回名古屋車站。您可以逛逛各大百貨、採購藥妝、吉卜力與迪士尼周邊或消遣放鬆。
                                 </p>
                                 <div class="p-3 bg-slate-50 rounded-xl text-sm font-bold text-slate-700 space-y-2">
-                                    <p>🛍️ <span class="text-indigo-700">熱門逛街地標：</span>JR Gate Tower Mall、JR 名古屋高島屋、MIDLAND SQUARE、ESCA 地下街等。</p>
+                                    <p>🛍️ <span class="text-indigo-700">熱門逛街地標：</span>JR Gate Tower Mall、JR
+                                        名古屋高島屋、MIDLAND SQUARE、ESCA 地下街等。</p>
                                     <p>🍴 <span class="text-indigo-700">宵夜點心備忘：</span>下午剛吃完蓬萊軒鰻魚大餐，晚上若稍微嘴饞，可至 ESCA
                                         地下街或車站商圈品嚐「手羽先風來坊」雞翅或地標小吃「味仙台灣拉麵」作為宵夜！</p>
                                 </div>
@@ -2078,465 +2444,6 @@
                         </div>
 
 
-                    </div>
-                </div>
-                <div id="day-7" class="day-panel hidden">
-                    <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-teal-500 mb-6">
-                        <h2 class="text-2xl font-black text-slate-800">7/24 (五) 科學奇觀與大須商店街邊吃邊逛</h2>
-                        <p class="text-slate-500 font-bold text-sm">第七站：世界之最星象劇場與超高能科學實驗大特攻</p>
-                    </div>
-                    <div class="relative pl-8 border-l-4 border-teal-100 space-y-10 ml-4">
-
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-teal-600 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-atom"></i></span>
-                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-4">
-                                <span class="text-sm font-black bg-blue-50 text-blue-600 px-3 py-1 rounded-full">09:30 -
-                                    13:30 (約4小時)</span>
-                                <h4 class="font-black text-xl text-slate-800 flex flex-wrap items-center gap-2">
-                                    名古屋市科學館
-                                    <a href="https://www.google.com/maps/search/?api=1&query=名古屋市科學館" target="_blank"
-                                        class="text-sky-500 text-base" title="Google 地圖導航"><i
-                                            class="fa-solid fa-location-dot"></i></a>
-                                    <a href="https://ticket.ncsm.city.nagoya.jp/" target="_blank"
-                                        class="text-indigo-500 text-base" title="官方線上購票"><i
-                                            class="fa-solid fa-ticket"></i></a>
-                                </h4>
-
-                                <div class="p-3 bg-blue-50 rounded-xl text-sm font-bold text-slate-700 space-y-1">
-                                    <p>• 官方線上購票：<a href="https://ticket.ncsm.city.nagoya.jp/" target="_blank"
-                                            class="text-indigo-600 hover:underline inline-flex items-center gap-1 font-black"><i
-                                                class="fa-solid fa-ticket text-indigo-500"></i>名古屋市科學館官方購票系統</a></p>
-                                    <p>• 基本票價：(展示館+天文館) 大人 800日圓 / 國中生以下(7歲男童) <span
-                                            class="text-emerald-600 font-extrabold">完全免費</span>。</p>
-                                    <p>• 環保券優惠：購票時出示昨日買好的「週末環保券」或一日券，大人門票立折 100 日圓。</p>
-                                    <p>• 再入館防呆：蓋上手背章後可自由進出。肚子餓了可先出館到外面的白川公園、榮商圈或大須商店街吃飯，再回館繼續玩。</p>
-                                </div>
-
-
-                                <div class="border-t border-slate-100 pt-3 space-y-3 text-sm font-bold text-slate-600">
-                                    <p class="font-black text-orange-600 text-sm flex items-center gap-1.5"><i
-                                            class="fa-solid fa-star"></i> 🌟 4 大必看重點（三大實驗＋鎮館之寶）：</p>
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 font-bold text-slate-600 text-sm">
-                                        <div class="p-3 bg-indigo-50/50 rounded-xl border border-indigo-100/60">
-                                            <p class="text-indigo-600 font-bold mb-1 flex items-center gap-1"><span
-                                                    class="text-blue-500">❄️</span> 極寒實驗室 (理工館 5F)</p>
-                                            <p class="text-slate-600 font-bold leading-relaxed text-sm">穿上防寒衣走進真實零下 30
-                                                度酷寒房間，體感極震撼、呼吸秒結冰，還能看夢幻極光影像！<span
-                                                    class="text-red-500 font-extrabold">【極難搶！開館立刻直衝 5 樓領取整理券】</span></p>
-                                        </div>
-                                        <div class="p-3 bg-sky-50/50 rounded-xl border border-sky-100/60">
-                                            <p class="text-sky-600 font-bold mb-1 flex items-center gap-1"><span
-                                                    class="text-amber-500">⚡</span> 放電實驗室 (理工館 4F)</p>
-                                            <p class="text-slate-600 font-bold leading-relaxed text-sm">4公尺高特斯拉線圈在眼前放出
-                                                120萬伏特 的超強電弧與震耳欲聾的閃電聲！平日開演前15分鐘現場排隊，週末假日發整理券，衝完5F記得馬上下4F確認方式。</p>
-                                        </div>
-                                        <div class="p-3 bg-rose-50/50 rounded-xl border border-rose-100/60">
-                                            <p class="text-rose-600 font-bold mb-1 flex items-center gap-1"><span
-                                                    class="text-orange-500">🌪️</span> 龍捲風實驗室 (理工館 3F)</p>
-                                            <p class="text-slate-600 font-bold leading-relaxed text-sm">高達 9
-                                                公尺的巨型裝置，現場從無到有製造出直通天花板的壯觀白色人造龍捲風。採定時表演不需券。<span
-                                                    class="text-indigo-600 font-extrabold">★ 內行看點在 4
-                                                    樓欄杆往下俯瞰，拍照錄影視野最完美！</span></p>
-                                        </div>
-                                        <div class="p-3 bg-orange-50/60 rounded-xl border border-orange-200/50">
-                                            <p class="text-orange-600 font-bold mb-1 flex items-center gap-1"><span
-                                                    class="text-purple-500">🌌</span> 天文館星象劇場 (天文館 6F)</p>
-                                            <p class="text-slate-600 font-bold leading-relaxed text-sm">直徑 35
-                                                公尺金氏世界紀錄「世界最大天文館圓頂 NTP Planet」。星空劇場極致逼真沉浸！<span
-                                                    class="text-teal-700 font-extrabold">【已購買已劃位場次：11:20 ~
-                                                    12:10】</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2 text-sm text-slate-700 font-bold">
-                                    <p class="font-black text-indigo-600 flex items-center gap-1.5 text-sm"><i
-                                            class="fa-solid fa-compass"></i> 7/24 推薦：【開館特攻 ➔ 配合 11:20 天文館】最佳流暢動線</p>
-                                    <p class="pl-1 font-bold text-sm text-slate-600 leading-relaxed">
-                                        為了確保 11:20 準時進入天文館，同時不浪費排隊時間，清晨開館黃金一小時請務必遵照以下特攻策略，拿到實驗券後再展開豐富的互動體驗：
-                                    </p>
-                                    <ol
-                                        class="list-decimal list-inside space-y-2.5 pl-1 text-sm font-bold text-slate-700">
-                                        <li><span class="text-slate-900">[09:00 - 09:15 ➔
-                                                提早卡位]：</span><br>抵達白川公園科學館門口排隊。09:30 開館入內迅速換好或買好套票。</li>
-                                        <li><span class="text-slate-900">[09:35 ➔ 搶券特攻第一步]：</span><br>不要猶豫，立刻搭電梯直衝 <span
-                                                class="text-red-500 font-bold">【理工館 5 樓】</span> 搶領「極寒實驗室」的當日整理券！</li>
-                                        <li><span class="text-slate-900">[09:45 ➔ 搶券特攻第二步]：</span><br>成功拿券後，馬上走安全梯下到
-                                            <span class="text-amber-600 font-bold">【理工館 4 樓】</span>
-                                            預約或確認「放電實驗室」的平日/假日場次排隊時間。
-                                        </li>
-                                        <li><span class="text-slate-900">[10:00 - 11:00 ➔ 5 樓與 2
-                                                樓互動體驗]：</span><br>依據預約到的極寒實驗室時間插空檔體驗。空檔先觀賞 5 樓化學元素實體化的「元素週期表實物牆」，或帶孩子去 2
-                                            樓玩超大「水之廣場」的水循環互動機關。</li>
-                                        <li><span class="text-slate-900">[11:00 - 12:10 ➔ 6
-                                                樓天文館星象劇場大沉浸]：</span><br>11:00 前提早搭電梯上 6 樓，先稍微逛一下太空探索與地球科學。解說前 10
-                                            分鐘務必至天文館入口排隊檢票，<span class="text-indigo-600 font-extrabold">享用 11:20 ~ 12:10
-                                                的世界最大星象球體沉浸式星空劇場</span>。</li>
-                                        <li><span class="text-slate-900">[12:15 - 12:45 ➔ 4
-                                                樓放電秀與俯瞰大龍捲]：</span><br>劇場結束後走樓梯下至 4 樓，體驗震撼的「放電實驗室」。結束後記得站在 4 樓欄杆處「準備俯瞰 3
-                                            樓的龍捲風表演」，這裡擁有全館最棒的龍捲風錄影視角！</li>
-                                        <li><span class="text-slate-900">[12:45 - 13:15 ➔ 3 樓近距離龍捲風與模型火車]：</span><br>下至
-                                            3 樓近距離看龍捲風生成，並觀賞小車迷會瘋掉的「超巨大都市模型列車」定時運行，順便看看房屋剖面結構。</li>
-                                        <li><span class="text-slate-900">[13:15 - 13:30 ➔ 2 樓恐龍尋寶與 1
-                                                樓挖寶完美結尾]：</span><br>到生命館尋找日劇《破案天才伽利略2》取景的超巨大馬普龍恐龍骨架與福山雅治簽名！最後到 1
-                                            樓紀念品店挖寶元素週期表毛巾、公式餅乾與試管糖果，隨後出館準備前往大須商店街！</li>
-                                    </ol>
-                                </div>
-
-                                <div class="mt-4 p-4 bg-slate-50 rounded-2xl text-sm border border-slate-200 font-bold">
-                                    <div class="flex items-start gap-2">
-                                        <span
-                                            class="bg-teal-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">步行</span>
-                                        <p class="text-slate-800">離開科學館後，輕鬆漫步穿過白川公園，朝東南方向步行約 10~15
-                                            分鐘（或至伏見站搭乘地鐵鶴舞線至大須觀音站），即可無縫串接下午的大須商店街行程。</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-teal-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-torii-gate"></i></span>
-                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 space-y-5">
-                                <span
-                                    class="text-sm font-black bg-teal-50 text-teal-600 px-3 py-1 rounded-full">14:00
-                                    - 18:00 (約4小時)</span>
-                                <h4 class="font-black text-xl text-slate-800 flex flex-wrap items-center gap-2">
-                                    大須文化與美食漫步（大須觀音 ➔ 商店街 ➔ 三輪神社）
-                                    <a href="https://www.google.com/maps/search/?api=1&query=大須觀音" target="_blank"
-                                        class="text-sky-500 text-base" title="Google 地圖導航"><i
-                                            class="fa-solid fa-location-dot"></i></a>
-                                </h4>
-
-                                <div
-                                    class="bg-slate-50/80 p-4 rounded-2xl border border-slate-200/60 space-y-2 text-sm text-slate-700 font-bold">
-                                    <p class="font-black text-amber-700 text-sm flex items-center gap-1.5"><i
-                                            class="fa-solid fa-gopuram"></i> 🏮 第一站：大須觀音（日本三大觀音之一 / 參觀免費）</p>
-                                    <p class="text-slate-500 text-xs font-semibold pl-1">從科學館穿過白川公園南下步行約 10~12 分鐘即可抵達。
-                                    </p>
-                                    <ul class="list-disc list-inside space-y-1 pl-1 text-slate-600 font-bold">
-                                        <li><span class="text-slate-900">宏偉大悲殿：</span>主殿正面懸掛著類似淺草寺的超巨大大紅燈籠，是必拍的經典歷史地標。
-                                        </li>
-                                        <li><span
-                                                class="text-slate-900">壯觀鴿子海：</span>廣場有極多鴿子，現場可買飼料(約50日圓)讓鴿子停在手上餵食，小朋友超愛！
-                                        </li>
-                                        <li><span class="text-slate-900">國寶藏書閣：</span>真福寺文庫珍藏萬卷古籍，包含日本最古老歷史書《古事記》的現存古寫本。
-                                        </li>
-                                        <li><span class="text-indigo-600">※ 隱藏市集：</span>若日期剛好碰上每月 18、28
-                                            日，廟前廣場會舉辦熱鬧的「骨董市集」可淘寶。</li>
-                                    </ul>
-                                </div>
-
-                                <div
-                                    class="bg-slate-50/80 p-4 rounded-2xl border border-slate-200/60 space-y-2 text-sm text-slate-700 font-bold">
-                                    <p class="font-black text-emerald-700 text-sm flex items-center gap-1.5"><i
-                                            class="fa-solid fa-shop"></i> 🛍️ 第二站：大須商店街（有天棚的日式庶民美食天堂）</p>
-                                    <p class="text-slate-500 text-xs font-semibold pl-1">由大須觀音旁直接開逛：仁王門通 ➔ 東仁王門通 ➔ 萬松寺通。
-                                    </p>
-                                    <ul class="list-disc list-inside space-y-1 pl-1 text-slate-600 font-bold">
-                                        <li><span class="text-slate-900">全天候拱廊：</span>具備防曬、防雨的巨型採光天棚街道，縱橫交錯聚集超過 1,200
-                                            家店舖。</li>
-                                        <li><span
-                                                class="text-slate-900">美食吃貨街：</span>沿路邊走邊吃日式炸雞、鯛魚燒、烤糰子、現刨冰品，大人小孩補充體力首選。
-                                        </li>
-                                        <li><span
-                                                class="text-slate-900">多元文化交織：</span>結合傳統小吃、文青古著屋、異國料理與動漫模型店，被譽為名古屋的秋葉原。
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div
-                                    class="bg-slate-50/80 p-4 rounded-2xl border border-slate-200/60 space-y-2 text-sm text-slate-700 font-bold">
-                                    <p class="font-black text-rose-600 text-sm flex items-center gap-1.5"><i
-                                            class="fa-solid fa-heart"></i> 🐇 第三站：三輪神社（日本最萌兔子神社 / 追星推し活聖地）</p>
-                                    <p class="text-slate-500 text-xs font-semibold pl-1">
-                                        位於商店街東側末端（接近矢場町方向），充滿粉紅泡泡的可愛打卡點。</p>
-                                    <ul class="list-disc list-inside space-y-1 pl-1 text-slate-600 font-bold">
-                                        <li><span
-                                                class="text-slate-900">尋找隱藏福兔：</span>門口有「幸福福兔」石雕，據說摸摸牠與自己相同痛點的部位能袪病好運；境內各角落藏著各種木雕小兔子，可帶孩子一起尋寶拍照。
-                                        </li>
-                                        <li><span
-                                                class="text-slate-900">追星神席祈願：</span>櫻花妹爆紅景點！販售十幾種代表偶像的「推し色（成員色）御守」與心形相片御守，大批粉絲會來掛「兔子繪馬」祈求抽中演唱會前排神席。
-                                        </li>
-                                        <li><span
-                                                class="text-slate-900">華麗御朱印：</span>隨季節與節慶（如櫻花、新年）推出超精緻的「彩色立體剪紙御朱印」，款式多達十幾種，精美如藝術品。
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div
-                                    class="p-3 bg-teal-50/60 rounded-2xl text-xs font-bold border border-teal-100 text-slate-700">
-                                    <p class="flex items-center gap-1"><i class="fa-solid fa-train_subway"></i> 🚇
-                                        傍晚回程：三輪神社步行約 5~7 分鐘即可抵達地鐵名城線「矢場町站」。</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="day-8" class="day-panel hidden">
-                    <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-pink-400 mb-6">
-                        <h2 class="text-2xl font-black text-slate-800">7/25 (六) 實體新幹線聖地與榮商圈百貨巡禮</h2>
-                    </div>
-                    <div class="relative pl-8 border-l-4 border-pink-100 space-y-10 ml-4">
-
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-indigo-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-route"></i></span>
-                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
-                                <span
-                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">09:30 - 09:54</span>
-                                <h4 class="font-black text-base text-slate-800 mt-2">晨間出發交通：名古屋站 ➔ 金城埠頭站 ➔ 鐵道館</h4>
-
-                                <div
-                                    class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
-                                    <div class="flex items-start gap-2">
-                                        <span
-                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
-                                        <p class="text-slate-800">於 <span
-                                                class="text-indigo-600 font-black">名古屋車站</span> 搭乘 <span
-                                                class="text-slate-900 font-black">青波線（あおなみ線）</span> 往金城埠頭方向之電車，一路直達終點站。
-                                        </p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <span
-                                            class="bg-teal-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">下車</span>
-                                        <p class="text-slate-800">於終點 <span
-                                                class="text-slate-900 font-black">金城ふ頭站</span> 下車出站，出站後順著林蔭高架天橋 <span
-                                                class="text-emerald-600 font-black">步行約 2 分鐘</span> 即可直達磁浮鐵道館正門，完全不怕迷路！
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-rose-400 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-train-subway"></i></span>
-                            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-5">
-                                <span class="text-sm font-black bg-rose-50 text-rose-500 px-3 py-1 rounded-full">10:00 -
-                                    14:00</span>
-                                <h4 class="font-black text-xl text-slate-800 flex items-center">リニア・鉄道館（磁浮鐵道館） <a
-                                        href="http://googleusercontent.com/maps.google.com/5" target="_blank"
-                                        class="text-sky-500 hover:text-sky-600 ml-1.5"><i
-                                            class="fa-solid fa-location-dot"></i></a></h4>
-
-                                <div class="p-3 bg-rose-50 rounded-xl text-xs font-bold text-slate-700 space-y-1">
-                                    <p>• <span class="text-rose-700">門票資訊：</span>成人 1,200 日圓 / 中小學生 500 日圓 / 幼兒(3歲以上)
-                                        200 日圓。</p>
-                                    <p>• <span class="text-rose-700">貼心防呆：</span>10:00開館（每週二公休）。入館後連接官方
-                                        Wi-Fi，即可用個人手機免費收聽<span class="text-indigo-600 font-black">中文語音導覽</span>。</p>
-                                </div>
-
-                                <div class="border-t border-slate-100 pt-3 space-y-2 text-sm font-bold text-slate-600">
-                                    <p class="font-black text-orange-600 text-sm"><i class="fa-solid fa-star"></i> 境內大脈絡
-                                        8 大必看亮點：</p>
-                                    <ul class="list-disc list-inside space-y-2 pl-1 text-sm text-slate-600 font-bold">
-                                        <li><span class="text-slate-900">1. 創紀錄三大鎮館之寶：</span>入口黑暗展間內並排著創世界最高速的蒸汽火車
-                                            C62、新幹線試驗車 300X 及超導磁浮列車 MLX01-1，視覺震撼爆表。</li>
-                                        <li><span class="text-slate-900">2. 萬馬奔騰列車展示大廳：</span>停放 20
-                                            多輛實體退役名車。包含元祖「0系」新幹線與極罕見的黃色檢測車「Dr. Yellow」。<span
-                                                class="text-teal-600 font-black">【內行拍照點】：記得上 2 樓俯瞰拍下大廳全景！</span></li>
-                                        <li><span class="text-slate-900">3. 戶外 N700 系車廂體驗：</span>完整保留自由座與商務艙。<span
-                                                class="text-emerald-600">【內行玩法】：可將館內買的火車便當帶入這節冷氣車廂內享用</span>，就像真的在搭新幹線一樣！
-                                        </li>
-                                        <li><span class="text-slate-900">4.
-                                                日本最大級鐵道立體模型：</span>超精緻動態城市天幕模型（包含東京晴空塔、名古屋城等），具備細緻的「日夜光影變化」與動態小火車。</li>
-                                        <li><span class="text-slate-900">5. N700 新幹線模擬駕駛（極搶手）：</span>1:1
-                                            尺寸駕駛室與超大曲面螢幕（15分/500日圓）。名額有限，<span
-                                                class="underline text-slate-900">想當小小列車長記得一開館就先衝去機台搶購</span>！</li>
-                                        <li><span class="text-slate-900">6.
-                                                在來線駕駛與車掌模擬器：</span>可體驗電車加速減速進站（100日圓），或在模擬車廂負責關車門、看大螢幕確認安全並進行車內廣播（500日圓）。
-                                        </li>
-                                        <li><span class="text-slate-900">7. 超導磁浮列車展示室：</span>介紹時速 603 公里的 L0
-                                            系列車，設有「超高速體感迷你劇場」，並能透過趣味互動遊戲了解磁浮懸浮的科學原理。</li>
-                                        <li><span class="text-slate-900">8. 免費客製印名紀念車票：</span>可免費操作復古售票機列印<span
-                                                class="text-rose-600 font-black">印有自己名字（英/片假名）的客製車票</span>，投入實體檢票口會打洞吐回，是非常棒的收藏品！
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div
-                                    class="p-4 bg-slate-50 border border-slate-200 rounded-2xl text-xs font-bold text-slate-700 space-y-2">
-                                    <p class="text-slate-900 text-sm font-black"><i class="fa-solid fa-store"></i>
-                                        鐵道美食與必買限定紀念品：</p>
-                                    <p class="leading-relaxed">• <span class="text-rose-700 font-black">必吃「Dr. Yellow
-                                            黃醫生造型便當」：</span>館內餐廳「DELICA
-                                        STATION」販售，配菜豐富（玉子燒、炸物等）且附贈紀念小卡，黃色火車造型外盒吃完可以帶回家當小玩具或鉛筆盒！</p>
-                                    <p class="leading-relaxed">• <span class="text-rose-700 font-black">Museum Shop
-                                            紀念品店：</span>位於出口處，販售大量 JR 東海限定商品、各式新幹線模型玩具、鐵道文具與精緻零食，小心荷包失血。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-indigo-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-route"></i></span>
-                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
-                                <span
-                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">14:00
-                                    - 14:45</span>
-                                <h4 class="font-black text-base text-slate-800 mt-2">下午轉場交通：金城埠頭 ➔ 榮商圈</h4>
-
-                                <div
-                                    class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
-                                    <div class="flex items-start gap-2">
-                                        <span
-                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
-                                        <p class="text-slate-800">從磁浮鐵道館步行回 <span
-                                                class="text-slate-900 font-black">金城ふ頭站</span>，搭乘 <span
-                                                class="text-indigo-600 font-black">青波線</span> 返回名古屋車站（車程 24 分鐘）。</p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <span
-                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">轉乘</span>
-                                        <p class="text-slate-800">於名古屋站轉乘地下鐵 <span
-                                                class="text-indigo-600 font-black">東山線</span>（往藤之丘方向），坐 2 站至 <span
-                                                class="text-indigo-600 font-black">「榮」站</span> 下車，出站即抵達榮商圈核心。</p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <span
-                                            class="bg-teal-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">車資</span>
-                                        <p class="text-slate-700">青波線單程 ¥360 + 地鐵單程 ¥210（地鐵部分可直接刷週末環保券）。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-pink-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-bag-shopping"></i></span>
-                            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4">
-                                <span class="text-sm font-black bg-pink-50 text-pink-600 px-3 py-1 rounded-full">14:45 -
-                                    20:30</span>
-                                <h4 class="font-black text-xl text-slate-800 flex items-center">榮商圈頂級百貨血拼與美食巡禮</h4>
-                                <p class="text-sm text-slate-600 font-bold leading-relaxed">
-                                    榮商圈是名古屋最精華的百貨戰區！我們將在此逛街、血拼、享用美味晚餐。
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-rose-400 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-train-subway"></i></span>
-                            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-5">
-                                <span class="text-sm font-black bg-rose-50 text-rose-500 px-3 py-1 rounded-full">10:00 -
-                                    14:00</span>
-                                <h4 class="font-black text-xl text-slate-800 flex items-center">リニア・鉄道館（磁浮鐵道館） <a
-                                        href="http://googleusercontent.com/maps.google.com/5" target="_blank"
-                                        class="text-sky-500 hover:text-sky-600 ml-1.5"><i
-                                            class="fa-solid fa-location-dot"></i></a></h4>
-
-                                <div class="p-3 bg-rose-50 rounded-xl text-xs font-bold text-slate-700 space-y-1">
-                                    <p>• <span class="text-rose-700">門票資訊：</span>成人 1,200 日圓 / 中小學生 500 日圓 / 幼兒(3歲以上)
-                                        200 日圓。</p>
-                                    <p>• <span class="text-rose-700">貼心防呆：</span>10:00開館（每週二公休）。入館後連接官方
-                                        Wi-Fi，即可用個人手機免費收聽<span class="text-indigo-600 font-black">中文語音導覽</span>。</p>
-                                </div>
-
-                                <div class="border-t border-slate-100 pt-3 space-y-2 text-sm font-bold text-slate-600">
-                                    <p class="font-black text-orange-600 text-sm"><i class="fa-solid fa-star"></i> 境內大脈絡
-                                        8 大必看亮點：</p>
-                                    <ul class="list-disc list-inside space-y-2 pl-1 text-sm text-slate-600 font-bold">
-                                        <li><span class="text-slate-900">1. 創紀錄三大鎮館之寶：</span>入口黑暗展間內並排著創世界最高速的蒸汽火車
-                                            C62、新幹線試驗車 300X 及超導磁浮列車 MLX01-1，視覺震撼爆表。</li>
-                                        <li><span class="text-slate-900">2. 萬馬奔騰列車展示大廳：</span>停放 20
-                                            多輛實體退役名車。包含元祖「0系」新幹線與極罕見的黃色檢測車「Dr. Yellow」。<span
-                                                class="text-teal-600 font-black">【內行拍照點】：記得上 2 樓俯瞰拍下大廳全景！</span></li>
-                                        <li><span class="text-slate-900">3. 戶外 N700 系車廂體驗：</span>完整保留自由座與商務艙。<span
-                                                class="text-emerald-600">【內行玩法】：可將館內買的火車便當帶入這節冷氣車廂內享用</span>，就像真的在搭新幹線一樣！
-                                        </li>
-                                        <li><span class="text-slate-900">4.
-                                                日本最大級鐵道立體模型：</span>超精緻動態城市天幕模型（包含東京晴空塔、名古屋城等），具備細緻的「日夜光影變化」與動態小火車。</li>
-                                        <li><span class="text-slate-900">5. N700 新幹線模擬駕駛（極搶手）：</span>1:1
-                                            尺寸駕駛室與超大曲面螢幕（15分/500日圓）。名額有限，<span
-                                                class="underline text-slate-900">想當小小列車長記得一開館就先衝去機台搶購</span>！</li>
-                                        <li><span class="text-slate-900">6.
-                                                在來線駕駛與車掌模擬器：</span>可體驗電車加速減速進站（100日圓），或在模擬車廂負責關車門、看大螢幕確認安全並進行車內廣播（500日圓）。
-                                        </li>
-                                        <li><span class="text-slate-900">7. 超導磁浮列車展示室：</span>介紹時速 603 公里的 L0
-                                            系列車，設有「超高速體感迷你劇場」，並能透過趣味互動遊戲了解磁浮懸浮的科學原理。</li>
-                                        <li><span class="text-slate-900">8. 免費客製印名紀念車票：</span>可免費操作復古售票機列印<span
-                                                class="text-rose-600 font-black">印有自己名字（英/片假名）的客製車票</span>，投入實體檢票口會打洞吐回，是非常棒的收藏品！
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div
-                                    class="p-4 bg-slate-50 border border-slate-200 rounded-2xl text-xs font-bold text-slate-700 space-y-2">
-                                    <p class="text-slate-900 text-sm font-black"><i class="fa-solid fa-store"></i>
-                                        鐵道美食與必買限定紀念品：</p>
-                                    <p class="leading-relaxed">• <span class="text-rose-700 font-black">必吃「Dr. Yellow
-                                            黃醫生造型便當」：</span>館內餐廳「DELICA
-                                        STATION」販售，配菜豐富（玉子燒、炸物等）且附贈紀念小卡，黃色火車造型外盒吃完可以帶回家當小玩具或鉛筆盒！</p>
-                                    <p class="leading-relaxed">• <span class="text-rose-700 font-black">Museum Shop
-                                            紀念品店：</span>位於出口處，販售大量 JR 東海限定商品、各式新幹線模型玩具、鐵道文具與精緻零食，小心荷包失血。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-indigo-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-route"></i></span>
-                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
-                                <span
-                                    class="text-sm font-black bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full">14:00
-                                    - 14:45</span>
-                                <h4 class="font-black text-base text-slate-800 mt-2">下午轉場交通：金城埠頭 ➔ 榮商圈</h4>
-
-                                <div
-                                    class="mt-3 p-4 bg-slate-50 rounded-2xl text-sm text-slate-600 border border-slate-200 space-y-3 font-bold">
-                                    <div class="flex items-start gap-2">
-                                        <span
-                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">搭乘</span>
-                                        <p class="text-slate-800">從磁浮鐵道館步行回 <span
-                                                class="text-slate-900 font-black">金城ふ頭站</span>，搭乘 <span
-                                                class="text-indigo-600 font-black">青波線</span> 返回名古屋車站（車程 24 分鐘）。</p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <span
-                                            class="bg-orange-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">轉乘</span>
-                                        <p class="text-slate-800">於名古屋站轉乘地下鐵 <span
-                                                class="text-indigo-600 font-black">東山線</span>（往藤之丘方向），坐 2 站至 <span
-                                                class="text-indigo-600 font-black">「榮」站</span> 下車，出站即抵達榮商圈核心。</p>
-                                    </div>
-                                    <div class="border-t border-dashed border-slate-200 pt-2 flex items-start gap-2">
-                                        <span
-                                            class="bg-teal-500 text-white px-2 py-0.5 rounded text-xs shrink-0 mt-0.5">車資</span>
-                                        <p class="text-slate-700">青波線單程 ¥360 + 地鐵單程 ¥210（地鐵部分可直接刷週末環保券）。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <span
-                                class="absolute -left-[44px] top-0 bg-pink-500 w-8 h-8 rounded-full border-4 border-white shadow-md flex items-center justify-center text-white text-xs"><i
-                                    class="fa-solid fa-bag-shopping"></i></span>
-                            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-4">
-                                <span class="text-sm font-black bg-pink-50 text-pink-600 px-3 py-1 rounded-full">14:45 -
-                                    20:30</span>
-                                <h4 class="font-black text-xl text-slate-800 flex items-center">榮商圈頂級百貨血拼與美食巡禮</h4>
-                                <p class="text-sm text-slate-600 font-bold leading-relaxed">
-                                    榮商圈是名古屋最精華的百貨戰區！我們將在此逛街、血拼、享用美味晚餐。
-                                </p>
-                                <div class="pt-2">
-                                    <button onclick="switchTab('sakae')"
-                                        class="inline-flex items-center justify-center w-full sm:w-auto bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-black text-sm px-6 py-3 rounded-2xl shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95">
-                                        <i class="fa-solid fa-store mr-2"></i> 點此查看「榮商圈 7 大百貨美食攻略」詳細分頁
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -2616,12 +2523,13 @@
 
         </section>
 
-                <section id="nagoya-station" class="tab-content hidden space-y-8 animate-fade-in">
+        <section id="nagoya-station" class="tab-content hidden space-y-8 animate-fade-in">
             <div
                 class="relative bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 rounded-[2rem] p-8 text-white shadow-2xl shadow-indigo-150 overflow-hidden">
                 <div class="absolute top-0 right-0 p-8 opacity-10 text-9xl">🚉</div>
                 <div class="relative z-10">
-                    <p class="text-indigo-100 text-sm font-black uppercase tracking-widest mb-2">Nagoya Station Guide</p>
+                    <p class="text-indigo-100 text-sm font-black uppercase tracking-widest mb-2">Nagoya Station Guide
+                    </p>
                     <h1 class="text-3xl md:text-4xl font-black mb-2">名古屋車站・購物美食攻略</h1>
                     <p class="text-sm md:text-base font-bold text-indigo-50">集結地標百貨、必吃名古屋美食與經典地下街採購指南</p>
                 </div>
@@ -2630,23 +2538,27 @@
             <div class="grid grid-cols-1 gap-6">
                 <!-- JR Gate Tower & Gate Tower Mall -->
                 <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-4">
-                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span class="mr-3 text-2xl">🏢</span>JR GATE TOWER MALL (JR 閘門塔購物商場)</h3>
+                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span
+                            class="mr-3 text-2xl">🏢</span>JR GATE TOWER MALL (JR 閘門塔購物商場)</h3>
                     <p class="text-sm text-slate-600 font-bold leading-relaxed">
                         與名古屋車站直通的潮流地標，集結了超人氣的生活雜貨、美妝保養、服飾品牌與大型書店、家電量販店，是車站周邊最好逛的商場之一！
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-bold text-slate-600">
                         <div class="p-4 bg-indigo-50/50 rounded-2xl border border-indigo-100/60 space-y-2">
-                            <p class="text-indigo-700 font-black text-sm"><i class="fa-solid fa-bag-shopping mr-1.5"></i>低樓層美妝潮流與雜貨 (1F - 6F)</p>
+                            <p class="text-indigo-700 font-black text-sm"><i
+                                    class="fa-solid fa-bag-shopping mr-1.5"></i>低樓層美妝潮流與雜貨 (1F - 6F)</p>
                             <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
                                 <li><span class="text-slate-800">1F・卡通與雜貨：</span>Disney Store ｜ どんぐり共和国 (吉卜力橡子共和國)</li>
                                 <li><span class="text-slate-800">2F・咖啡與香氛：</span>blue bottle ｜ LE LABO</li>
                                 <li><span class="text-slate-800">4F・經典甜點：</span>HARBS</li>
-                                <li><span class="text-slate-800">5F・潮流服飾美妝：</span>@COSME ｜ LEANASIS ｜ SLY ｜ ROPE PICNIC ｜ Ungrid ｜ SENSE OF PLACE ｜ WPC</li>
+                                <li><span class="text-slate-800">5F・潮流服飾美妝：</span>@COSME ｜ LEANASIS ｜ SLY ｜ ROPE PICNIC
+                                    ｜ Ungrid ｜ SENSE OF PLACE ｜ WPC</li>
                                 <li><span class="text-slate-800">6F・香氛與保養：</span>SHIRO ｜ BAUM</li>
                             </ul>
                         </div>
                         <div class="p-4 bg-amber-50/50 rounded-2xl border border-amber-100/60 space-y-2">
-                            <p class="text-amber-700 font-black text-sm"><i class="fa-solid fa-store mr-1.5"></i>中高樓層與旗艦店鋪 (7F - 11F)</p>
+                            <p class="text-amber-700 font-black text-sm"><i
+                                    class="fa-solid fa-store mr-1.5"></i>中高樓層與旗艦店鋪 (7F - 11F)</p>
                             <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
                                 <li><span class="text-slate-800">7F・卡通角色周邊：</span>Rilakkuma Store ｜ Snoopy</li>
                                 <li><span class="text-slate-800">8F・大型書店：</span>三省堂書店</li>
@@ -2659,23 +2571,30 @@
 
                 <!-- JR Nagoya Takashimaya (JR 名古屋高島屋) -->
                 <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-4">
-                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span class="mr-3 text-2xl">🛍️</span>JR 名古屋高島屋 (JR Nagoya Takashimaya)</h3>
+                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span
+                            class="mr-3 text-2xl">🛍️</span>JR 名古屋高島屋 (JR Nagoya Takashimaya)</h3>
                     <p class="text-sm text-slate-600 font-bold leading-relaxed">
                         與名古屋車站直通，是中部地區營業額極高的指標型百貨，化妝品與名品陣容極為強大，更是美食排隊名鋪的集中地！
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-bold text-slate-600">
                         <div class="p-4 bg-rose-50/50 rounded-2xl border border-rose-100/60 space-y-2">
-                            <p class="text-rose-700 font-black text-sm"><i class="fa-solid fa-tag mr-1.5"></i>商場購物與精品美妝 (3F / 11F)</p>
+                            <p class="text-rose-700 font-black text-sm"><i class="fa-solid fa-tag mr-1.5"></i>商場購物與精品美妝
+                                (3F / 11F)</p>
                             <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
-                                <li><span class="text-slate-800">3F・國際精品美妝：</span>CHANEL ｜ Dior ｜ YSL ｜ Clé de Peau Beauté ｜ SUQQU ｜ Elégance ｜ SHIRO ｜ Attenir ｜ BAO BAO ISSEY MIYAKE ｜ ReFa</li>
-                                <li><span class="text-slate-800">11F・免稅服務：</span>免稅櫃台（可領取 <span class="text-red-500 font-black">5% 折價券</span>，部分商品適用）</li>
+                                <li><span class="text-slate-800">3F・國際精品美妝：</span>CHANEL ｜ Dior ｜ YSL ｜ Clé de Peau
+                                    Beauté ｜ SUQQU ｜ Elégance ｜ SHIRO ｜ Attenir ｜ BAO BAO ISSEY MIYAKE ｜ ReFa</li>
+                                <li><span class="text-slate-800">11F・免稅服務：</span>免稅櫃台（可領取 <span
+                                        class="text-red-500 font-black">5% 折價券</span>，部分商品適用）</li>
                             </ul>
                         </div>
                         <div class="p-4 bg-teal-50/50 rounded-2xl border border-teal-100/60 space-y-2">
-                            <p class="text-teal-700 font-black text-sm"><i class="fa-solid fa-utensils mr-1.5"></i>高樓層美食餐廳 (12F / 13F)</p>
+                            <p class="text-teal-700 font-black text-sm"><i
+                                    class="fa-solid fa-utensils mr-1.5"></i>高樓層美食餐廳 (12F / 13F)</p>
                             <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
-                                <li><span class="text-slate-800">12F・人氣名店美食：</span>伊藤園 点（てん） ｜ ミート矢澤 ｜ CURRY HOUSE CoCoICHIBANYA WORLD ｜ 鉄板・お好み焼き 電光石火</li>
-                                <li><span class="text-slate-800">13F・在地特色美食：</span>山本屋總本家 ｜ ハンバーグ＆ステーキ 黑毛和牛 腰塚 ｜ とんかつ 恵亭 ｜ とり 五鐵（ゴテツ）</li>
+                                <li><span class="text-slate-800">12F・人氣名店美食：</span>伊藤園 点（てん） ｜ ミート矢澤 ｜ CURRY HOUSE
+                                    CoCoICHIBANYA WORLD ｜ 鉄板・お好み焼き 電光石火</li>
+                                <li><span class="text-slate-800">13F・在地特色美食：</span>山本屋總本家 ｜ ハンバーグ＆ステーキ 黑毛和牛 腰塚 ｜ とんかつ 恵亭
+                                    ｜ とり 五鐵（ゴテツ）</li>
                             </ul>
                         </div>
                     </div>
@@ -2683,20 +2602,24 @@
 
                 <!-- Midland Square (米德蘭廣場) -->
                 <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-4">
-                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span class="mr-3 text-2xl">🏙️</span>MIDLAND SQUARE (米德蘭廣場)</h3>
+                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span
+                            class="mr-3 text-2xl">🏙️</span>MIDLAND SQUARE (米德蘭廣場)</h3>
                     <p class="text-sm text-slate-600 font-bold leading-relaxed">
                         名古屋車站正對面的超高地標大樓，擁有中部地區極高的開放式觀景台，是欣賞名古屋城市夜景的絕佳景點！
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-bold text-slate-600">
                         <div class="p-4 bg-purple-50/50 rounded-2xl border border-purple-100/60 space-y-2">
-                            <p class="text-purple-700 font-black text-sm"><i class="fa-solid fa-image mr-1.5"></i>天空迴廊室外觀景台 (44F - 46F)</p>
+                            <p class="text-purple-700 font-black text-sm"><i
+                                    class="fa-solid fa-image mr-1.5"></i>天空迴廊室外觀景台 (44F - 46F)</p>
                             <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
                                 <li><span class="text-slate-800">44F-46F・「天空迴廊（Sky Promenade）」：</span></li>
-                                <p class="pl-4 text-slate-600 leading-relaxed font-bold">中部地區最高的室外觀景台。採用室外半開放式的設計，可以 360 度俯瞰名古屋市區全景，黃昏與夜景氣氛極佳！</p>
+                                <p class="pl-4 text-slate-600 leading-relaxed font-bold">中部地區最高的室外觀景台。採用室外半開放式的設計，可以 360
+                                    度俯瞰名古屋市區全景，黃昏與夜景氣氛極佳！</p>
                             </ul>
                         </div>
                         <div class="p-4 bg-blue-50/50 rounded-2xl border border-blue-100/60 space-y-2">
-                            <p class="text-blue-700 font-black text-sm"><i class="fa-solid fa-circle-info mr-1.5"></i>參觀資訊</p>
+                            <p class="text-blue-700 font-black text-sm"><i
+                                    class="fa-solid fa-circle-info mr-1.5"></i>參觀資訊</p>
                             <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
                                 <li><span class="text-slate-800">開放時間：</span>11:00 - 22:00 (最後入場 21:30)</li>
                                 <li><span class="text-slate-800">特色：</span>可從名古屋車站地下通道直達，搭乘雙層快速穿梭電梯。</li>
@@ -2707,20 +2630,23 @@
 
                 <!-- ESCA Underground Street (ESCA地下街) -->
                 <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50 space-y-4">
-                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span class="mr-3 text-2xl">🚇</span>ESCA 地下街</h3>
+                    <h3 class="font-black text-2xl text-slate-800 flex items-center"><span
+                            class="mr-3 text-2xl">🚇</span>ESCA 地下街</h3>
                     <p class="text-sm text-slate-600 font-bold leading-relaxed">
                         位於名古屋車站新幹線口（西口）正下方，下車即達！這裡聚集了大量的名古屋在地特色美食餐廳、藥妝店、伴手禮店，是轉乘新幹線或回國前補貨的黃金通道。
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-bold text-slate-600">
                         <div class="p-4 bg-orange-50/50 rounded-2xl border border-orange-100/60 space-y-2">
-                            <p class="text-orange-700 font-black text-sm"><i class="fa-solid fa-basket-shopping mr-1.5"></i>購物與藥妝推薦</p>
+                            <p class="text-orange-700 font-black text-sm"><i
+                                    class="fa-solid fa-basket-shopping mr-1.5"></i>購物與藥妝推薦</p>
                             <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
                                 <li><span class="text-slate-800">千里馬藥局與各式藥妝：</span>地下街內設有免稅藥妝店，採購非常方便。</li>
                                 <li><span class="text-slate-800">名古屋名產專賣店：</span>一次買齊名物蝦仙貝、手羽先風味餅乾、赤福等伴手禮。</li>
                             </ul>
                         </div>
                         <div class="p-4 bg-sky-50/50 rounded-2xl border border-sky-100/60 space-y-2">
-                            <p class="text-sky-700 font-black text-sm"><i class="fa-solid fa-fire mr-1.5"></i>經典名古屋美食推薦</p>
+                            <p class="text-sky-700 font-black text-sm"><i class="fa-solid fa-fire mr-1.5"></i>經典名古屋美食推薦
+                            </p>
                             <ul class="list-disc list-inside space-y-1.5 font-bold text-slate-600">
                                 <li><span class="text-slate-800">山本屋本店：</span>名古屋著名的味噌烏龍麵老字號，湯頭濃郁、麵條極具嚼勁。</li>
                                 <li><span class="text-slate-800">矢場とん (矢場豬排)：</span>超人氣鐵板味噌豬排，濃郁醬汁與厚實豬肉完美搭配。</li>
@@ -2739,7 +2665,8 @@
                 class="relative bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-[2rem] p-8 text-white shadow-2xl shadow-indigo-150 overflow-hidden">
                 <div class="absolute top-0 right-0 p-8 opacity-10 text-9xl">🛍️</div>
                 <div class="relative z-10">
-                    <p class="text-indigo-100 text-sm font-black uppercase tracking-widest mb-2">Sakae Shopping Guide</p>
+                    <p class="text-indigo-100 text-sm font-black uppercase tracking-widest mb-2">Sakae Shopping Guide
+                    </p>
                     <h1 class="text-3xl md:text-4xl font-black mb-2">榮商圈・7 大百貨購物指南</h1>
                     <p class="text-sm md:text-base font-bold text-indigo-50">精選榮商圈最核心的 7 家百貨與全新地標，包含潮流、動漫與頂級美食</p>
                 </div>
@@ -2752,240 +2679,237 @@
 
                 <div class="space-y-5 font-bold text-slate-700 text-sm">
 
-                                    <!-- SAKAE NOVA -->
-                                    <div class="p-4 bg-purple-50/30 rounded-2xl border border-purple-100/50 space-y-3">
-                                        <p
-                                            class="text-purple-700 font-black text-base flex items-center gap-1.5 border-b border-purple-100 pb-1.5">
-                                            <i class="fa-solid fa-store text-purple-500"></i> SAKAE NOVA（潮流流行鞋款與生活文具）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">1F・經典日潮鞋：</span><span
-                                                        class="text-indigo-600 font-black">Onitsuka Tiger (鬼塚虎)</span> —
-                                                     質感極高且好穿的日系潮流運動鞋首選專櫃。</li>
-                                                <li><span class="text-slate-800 font-bold">3F ~ 6F・LoFT
-                                                         旗艦生活雜貨：</span>日本超人氣連鎖生活雜貨免稅大鋪！
-                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                             class="text-slate-800 font-bold">3F：</span>美容與健康雜貨
-                                                         (美妝藥妝、保養及個人護理小物)。</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-slate-800 font-bold">4F：</span>生活雜貨
-                                                         (餐具、廚房用品、精緻家居擺設)。</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-indigo-600 font-black">5F：文具天堂：</span>手帳、鋼筆、印章、超萌貼紙與設計文房具，必逛！</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-slate-800 font-bold">6F：</span>綜藝趣味雜貨
-                                                         (各式伴手禮盒、節慶小物、創意玩具動漫風商品)。</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- SKYLE -->
-                                    <div class="p-4 bg-sky-50/30 rounded-2xl border border-sky-100/50 space-y-3">
-                                        <p
-                                            class="text-sky-700 font-black text-base flex items-center gap-1.5 border-b border-sky-100 pb-1.5">
-                                            <i class="fa-solid fa-store text-sky-500"></i> SKYLE（平價服飾與超大百元店）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">4F・生活百元雜貨：</span><span
-                                                        class="text-indigo-600 font-black">3Coins+Plus</span> — 高質感的 300
-                                                     日圓精緻生活雜貨、收納用品與流行配件。</li>
-                                                <li><span class="text-slate-800 font-bold">5F・平價服飾首選：</span><span
-                                                        class="text-slate-900 font-bold">UNIQLO</span> —
-                                                     經典百搭的日系休閒服飾與免稅服務。</li>
-                                                <li><span class="text-slate-800 font-bold">6F・潮流時尚服飾：</span><span
-                                                        class="text-slate-900 font-bold">GU</span> — 最新潮流設計的平價男女裝與配件。
-                                                 </li>
-                                                <li><span class="text-slate-800 font-bold">7F・超大型百元店聖地：</span>超巨型大創
-                                                     DAISO 聯合店鋪，包含三大品牌：
-                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                             class="text-indigo-600 font-black">超大間大創
-                                                             (DAISO)：</span>生活必需品、創意小物、伴手禮盒一應俱全。</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-indigo-600 font-black">Standard
-                                                             Products：</span>極簡無印風的高質感生活好物與家居裝飾。</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-pink-600 font-black">THREEPPY：</span>以粉嫩馬卡龍色系為主的超萌萌系生活雜貨。</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <!-- SAKAE NOVA -->
+                    <div class="p-4 bg-purple-50/30 rounded-2xl border border-purple-100/50 space-y-3">
+                        <p
+                            class="text-purple-700 font-black text-base flex items-center gap-1.5 border-b border-purple-100 pb-1.5">
+                            <i class="fa-solid fa-store text-purple-500"></i> SAKAE NOVA（潮流流行鞋款與生活文具）
+                        </p>
+                        <div class="space-y-2 text-xs">
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">1F・經典日潮鞋：</span><span
+                                        class="text-indigo-600 font-black">Onitsuka Tiger (鬼塚虎)</span> —
+                                    質感極高且好穿的日系潮流運動鞋首選專櫃。</li>
+                                <li><span class="text-slate-800 font-bold">3F ~ 6F・LoFT
+                                        旗艦生活雜貨：</span>日本超人氣連鎖生活雜貨免稅大鋪！
+                                    <span class="block pl-4 text-slate-600 mt-1">• <span
+                                            class="text-slate-800 font-bold">3F：</span>美容與健康雜貨
+                                        (美妝藥妝、保養及個人護理小物)。</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-slate-800 font-bold">4F：</span>生活雜貨
+                                        (餐具、廚房用品、精緻家居擺設)。</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-indigo-600 font-black">5F：文具天堂：</span>手帳、鋼筆、印章、超萌貼紙與設計文房具，必逛！</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-slate-800 font-bold">6F：</span>綜藝趣味雜貨
+                                        (各式伴手禮盒、節慶小物、創意玩具動漫風商品)。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- SKYLE -->
+                    <div class="p-4 bg-sky-50/30 rounded-2xl border border-sky-100/50 space-y-3">
+                        <p
+                            class="text-sky-700 font-black text-base flex items-center gap-1.5 border-b border-sky-100 pb-1.5">
+                            <i class="fa-solid fa-store text-sky-500"></i> SKYLE（平價服飾與超大百元店）
+                        </p>
+                        <div class="space-y-2 text-xs">
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">4F・生活百元雜貨：</span><span
+                                        class="text-indigo-600 font-black">3Coins+Plus</span> — 高質感的 300
+                                    日圓精緻生活雜貨、收納用品與流行配件。</li>
+                                <li><span class="text-slate-800 font-bold">5F・平價服飾首選：</span><span
+                                        class="text-slate-900 font-bold">UNIQLO</span> —
+                                    經典百搭的日系休閒服飾與免稅服務。</li>
+                                <li><span class="text-slate-800 font-bold">6F・潮流時尚服飾：</span><span
+                                        class="text-slate-900 font-bold">GU</span> — 最新潮流設計的平價男女裝與配件。
+                                </li>
+                                <li><span class="text-slate-800 font-bold">7F・超大型百元店聖地：</span>超巨型大創
+                                    DAISO 聯合店鋪，包含三大品牌：
+                                    <span class="block pl-4 text-slate-600 mt-1">• <span
+                                            class="text-indigo-600 font-black">超大間大創
+                                            (DAISO)：</span>生活必需品、創意小物、伴手禮盒一應俱全。</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-indigo-600 font-black">Standard
+                                            Products：</span>極簡無印風的高質感生活好物與家居裝飾。</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-pink-600 font-black">THREEPPY：</span>以粉嫩馬卡龍色系為主的超萌萌系生活雜貨。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                                    <!-- 松坂屋 -->
-                                    <div
-                                        class="p-4 bg-emerald-50/40 rounded-2xl border border-emerald-100/60 space-y-3">
-                                        <p
-                                            class="text-emerald-700 font-black text-base flex items-center gap-1.5 border-b border-emerald-100 pb-1.5">
-                                            <i class="fa-solid fa-store text-emerald-500"></i> 松坂屋（名古屋店）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <p class="font-black text-slate-900 flex items-center gap-1">🏢 本館（主力名店與美妝）：
-                                             </p>
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">B2・極推甜點：</span><span
-                                                        class="text-rose-600 font-black">ゴディパン (GODIVAPAN)</span> — 世界首家
-                                                     GODIVA 麵包店，人氣可頌與巧克力麵包必買！</li>
-                                                <li><span class="text-slate-800 font-bold">B1・伴手禮天堂：</span><span
-                                                        class="text-teal-700 font-black">茅乃舍</span> (頂級高湯包)、<span
-                                                        class="text-pink-600 font-black">HARBS</span> (千層蛋糕始祖)、<span
-                                                        class="text-amber-700 font-bold">小倉山莊</span> (精緻仙貝)。</li>
-                                                <li><span
-                                                        class="text-slate-800 font-bold">1F・美妝旗艦：</span>CHANEL、DIOR、Clé
-                                                     de Peau Beauté、SUQQU、ALBION、ReFa。</li>
-                                                <li><span class="text-slate-800 font-bold">9F・美食名店：</span><span
-                                                        class="text-orange-600 font-black">燒肉敘敘苑</span> (享用頂級燒肉晚餐)、<span
-                                                        class="text-indigo-700 font-bold">山本屋總本家</span> (味噌烏龍麵)、<span
-                                                        class="text-amber-700 font-bold">銀座天一</span> (正宗天婦羅)。</li>
-                                            </ul>
-                                            <p class="font-black text-slate-900 flex items-center gap-1 mt-2">🏢
-                                                 南館（經典美食）：</p>
-                                             <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">10F・經典美食：</span><span
-                                                        class="text-red-500 font-black">あつた蓬萊軒</span>
-                                                     (若昨日在神宮排不進去，今日可在這品嚐備用的正宗鰻魚飯！)。</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <!-- 松坂屋 -->
+                    <div class="p-4 bg-emerald-50/40 rounded-2xl border border-emerald-100/60 space-y-3">
+                        <p
+                            class="text-emerald-700 font-black text-base flex items-center gap-1.5 border-b border-emerald-100 pb-1.5">
+                            <i class="fa-solid fa-store text-emerald-500"></i> 松坂屋（名古屋店）
+                        </p>
+                        <div class="space-y-2 text-xs">
+                            <p class="font-black text-slate-900 flex items-center gap-1">🏢 本館（主力名店與美妝）：
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">B2・極推甜點：</span><span
+                                        class="text-rose-600 font-black">ゴディパン (GODIVAPAN)</span> — 世界首家
+                                    GODIVA 麵包店，人氣可頌與巧克力麵包必買！</li>
+                                <li><span class="text-slate-800 font-bold">B1・伴手禮天堂：</span><span
+                                        class="text-teal-700 font-black">茅乃舍</span> (頂級高湯包)、<span
+                                        class="text-pink-600 font-black">HARBS</span> (千層蛋糕始祖)、<span
+                                        class="text-amber-700 font-bold">小倉山莊</span> (精緻仙貝)。</li>
+                                <li><span class="text-slate-800 font-bold">1F・美妝旗艦：</span>CHANEL、DIOR、Clé
+                                    de Peau Beauté、SUQQU、ALBION、ReFa。</li>
+                                <li><span class="text-slate-800 font-bold">9F・美食名店：</span><span
+                                        class="text-orange-600 font-black">燒肉敘敘苑</span> (享用頂級燒肉晚餐)、<span
+                                        class="text-indigo-700 font-bold">山本屋總本家</span> (味噌烏龍麵)、<span
+                                        class="text-amber-700 font-bold">銀座天一</span> (正宗天婦羅)。</li>
+                            </ul>
+                            <p class="font-black text-slate-900 flex items-center gap-1 mt-2">🏢
+                                南館（經典美食）：</p>
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">10F・經典美食：</span><span
+                                        class="text-red-500 font-black">あつた蓬萊軒</span></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                                    <!-- 名古屋 PARCO -->
-                                    <div class="p-4 bg-pink-50/30 rounded-2xl border border-pink-100/50 space-y-3">
-                                        <p
-                                            class="text-pink-700 font-black text-base flex items-center gap-1.5 border-b border-pink-100 pb-1.5">
-                                            <i class="fa-solid fa-cart-shopping text-pink-500"></i> 名古屋 PARCO（潮流與動漫中心）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <p class="font-black text-slate-900 flex items-center gap-1">🏢
-                                                 東館（萌系動漫周邊，Luca 最愛）：</p>
-                                             <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">2F・寶可夢聖地：</span><span
-                                                        class="text-yellow-600 font-black">Pokémon Center NAGOYA</span>
-                                                     — 名古屋寶可夢中心，限量的限定商品必買！</li>
-                                                <li><span class="text-slate-800 font-bold">3F・人氣IP牆：</span><span
-                                                        class="text-amber-600 font-black">懶懶熊專賣店
-                                                         (Rilakkuma)</span>、<span class="text-sky-600 font-black">吉伊卡哇專賣店
-                                                         (Chiikawa Land)</span>、<span
-                                                         class="text-indigo-600 font-bold">kiddy land</span>。</li>
-                                            </ul>
-                                            <p class="font-black text-slate-900 flex items-center gap-1 mt-2">🏢
-                                                 西館（日系潮流服飾與名店）：</p>
-                                             <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">1F・經典甜點：</span><span
-                                                        class="text-pink-600 font-black">HARBS</span>。</li>
-                                                <li><span class="text-slate-800 font-bold">3F・日系服飾：</span>Ungrid、KBF。</li>
-                                                <li><span class="text-slate-800 font-bold">4F・日牌女裝大集合：</span>OLIVE des
-                                                     OLIVE、PAGEBOY、LOWRYS FARM、Heather、SLY、JEANASiS、w closet。</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <!-- 名古屋 PARCO -->
+                    <div class="p-4 bg-pink-50/30 rounded-2xl border border-pink-100/50 space-y-3">
+                        <p
+                            class="text-pink-700 font-black text-base flex items-center gap-1.5 border-b border-pink-100 pb-1.5">
+                            <i class="fa-solid fa-cart-shopping text-pink-500"></i> 名古屋 PARCO（潮流與動漫中心）
+                        </p>
+                        <div class="space-y-2 text-xs">
+                            <p class="font-black text-slate-900 flex items-center gap-1">🏢
+                                東館（萌系動漫周邊，Luca 最愛）：</p>
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">2F・寶可夢聖地：</span><span
+                                        class="text-yellow-600 font-black">Pokémon Center NAGOYA</span>
+                                    — 名古屋寶可夢中心，限量的限定商品必買！</li>
+                                <li><span class="text-slate-800 font-bold">3F・人氣IP牆：</span><span
+                                        class="text-amber-600 font-black">懶懶熊專賣店
+                                        (Rilakkuma)</span>、<span class="text-sky-600 font-black">吉伊卡哇專賣店
+                                        (Chiikawa Land)</span>、<span class="text-indigo-600 font-bold">kiddy
+                                        land</span>。</li>
+                            </ul>
+                            <p class="font-black text-slate-900 flex items-center gap-1 mt-2">🏢
+                                西館（日系潮流服飾與名店）：</p>
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">1F・經典甜點：</span><span
+                                        class="text-pink-600 font-black">HARBS</span>。</li>
+                                <li><span class="text-slate-800 font-bold">3F・日系服飾：</span>Ungrid、KBF。</li>
+                                <li><span class="text-slate-800 font-bold">4F・日牌女裝大集合：</span>OLIVE des
+                                    OLIVE、PAGEBOY、LOWRYS FARM、Heather、SLY、JEANASiS、w closet。</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                                    <!-- Alpen NAGOYA -->
-                                    <div class="p-4 bg-teal-50/30 rounded-2xl border border-teal-100/50 space-y-3">
-                                        <p
-                                            class="text-teal-700 font-black text-base flex items-center gap-1.5 border-b border-teal-100 pb-1.5">
-                                            <i class="fa-solid fa-person-running text-teal-500"></i> Alpen NAGOYA（超大型運動戶外旗艦店）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">1F・熱門鞋服：</span>跑鞋、籃球鞋、足球裝備</li>
-                                                <li><span class="text-slate-800 font-bold">2F・服飾配件：</span>健身服、瑜伽服、MLB棒球帽、運動揹包超全</li>
-                                                <li><span class="text-slate-800 font-bold">3F・球類運動：</span>游泳</li>
-                                                <li><span class="text-slate-800 font-bold">4F・戶外徒步：</span>登山裝備、露營服飾、兒童戶外用品</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <!-- Alpen NAGOYA -->
+                    <div class="p-4 bg-teal-50/30 rounded-2xl border border-teal-100/50 space-y-3">
+                        <p
+                            class="text-teal-700 font-black text-base flex items-center gap-1.5 border-b border-teal-100 pb-1.5">
+                            <i class="fa-solid fa-person-running text-teal-500"></i> Alpen NAGOYA（超大型運動戶外旗艦店）
+                        </p>
+                        <div class="space-y-2 text-xs">
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">1F・熱門鞋服：</span>跑鞋、籃球鞋、足球裝備</li>
+                                <li><span class="text-slate-800 font-bold">2F・服飾配件：</span>健身服、瑜伽服、MLB棒球帽、運動揹包超全</li>
+                                <li><span class="text-slate-800 font-bold">3F・球類運動：</span>游泳</li>
+                                <li><span class="text-slate-800 font-bold">4F・戶外徒步：</span>登山裝備、露營服飾、兒童戶外用品</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                                    <!-- HAERA -->
-                                    <div class="p-4 bg-rose-50/30 rounded-2xl border border-rose-100/50 space-y-3">
-                                        <p
-                                            class="text-rose-700 font-black text-base flex items-center gap-1.5 border-b border-rose-100 pb-1.5">
-                                            <i class="fa-solid fa-building text-rose-500"></i> HAERA（2026全新開幕地標 / 頂級美食）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">B2・高評價排隊名店：</span>
-                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                             class="text-slate-900 font-bold">とんかつ わだ福 (豬排わだ福)</span> —
-                                                         米油低溫熟成的超厚切炸豬排，配上羽釜現炊白飯，美味一絕。</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-slate-900 font-bold">天ぷらの浜金 ～旨い魚と揚げたて天ぷら～</span>
-                                                         — 職人現點現炸的酥脆天婦羅與每日直送新鮮魚介。</span>
-                                                 </li>
-                                                <li><span class="text-slate-800 font-bold">4F・奢華餐飲首選：</span>
-                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                             class="text-rose-600 font-black">炭焼 うな富士 栄店</span> —
-                                                         榮登米其林與百名店的排隊鰻魚名店！選用肥美「青鰻」以千度高溫炭火烤製。</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-slate-900 font-bold">和牛スギモト 燦</span> —
-                                                         老字號肉舖直營的頂級黑毛和牛壽喜燒與涮涮鍋。</span>
-                                                 </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <!-- HAERA -->
+                    <div class="p-4 bg-rose-50/30 rounded-2xl border border-rose-100/50 space-y-3">
+                        <p
+                            class="text-rose-700 font-black text-base flex items-center gap-1.5 border-b border-rose-100 pb-1.5">
+                            <i class="fa-solid fa-building text-rose-500"></i> HAERA（2026全新開幕地標 / 頂級美食）
+                        </p>
+                        <div class="space-y-2 text-xs">
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">B2・高評價排隊名店：</span>
+                                    <span class="block pl-4 text-slate-600 mt-1">• <span
+                                            class="text-slate-900 font-bold">とんかつ わだ福 (豬排わだ福)</span> —
+                                        米油低溫熟成的超厚切炸豬排，配上羽釜現炊白飯，美味一絕。</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-slate-900 font-bold">天ぷらの浜金 ～旨い魚と揚げたて天ぷら～</span>
+                                        — 職人現點現炸的酥脆天婦羅與每日直送新鮮魚介。</span>
+                                </li>
+                                <li><span class="text-slate-800 font-bold">4F・奢華餐飲首選：</span>
+                                    <span class="block pl-4 text-slate-600 mt-1">• <span
+                                            class="text-rose-600 font-black">炭焼 うな富士 栄店</span> —
+                                        榮登米其林與百名店的排隊鰻魚名店！選用肥美「青鰻」以千度高溫炭火烤製。</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-slate-900 font-bold">和牛スギモト 燦</span> —
+                                        老字號肉舖直營的頂級黑毛和牛壽喜燒與涮涮鍋。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                                    <!-- 中日ビル -->
-                                    <div class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/60 space-y-3">
-                                        <p
-                                            class="text-blue-700 font-black text-base flex items-center gap-1.5 border-b border-blue-100 pb-1.5">
-                                            <i class="fa-solid fa-building text-blue-500"></i> 中日大樓 (Chunichi Building /
-                                             2024全新地標)
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">B1・精品茶室：</span><span
-                                                        class="text-teal-700 font-black">YATAGARASU</span>
-                                                     (日本茶/濃厚抹茶專賣店)。</li>
-                                                <li><span class="text-slate-800 font-bold">1F・機能潮鞋：</span><span
-                                                        class="text-slate-900 font-bold">HOKA</span> (大受歡迎的高機能慢跑鞋專櫃)。
-                                                 </li>
-                                                <li><span class="text-slate-800 font-bold">2F・露營神牌：</span><span
-                                                        class="text-emerald-700 font-black">mont-bell</span>
-                                                     (日本最大最齊全的戶外運動用品旗艦店，免稅極划算)。</li>
-                                                <li><span class="text-slate-800 font-bold">3F・高評價午晚餐：</span>
-                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                             class="text-slate-800 font-bold">うなぎの兼光</span>
-                                                         (三河一色產的高品質平價鰻魚飯)</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-rose-600 font-black">燒肉丸明</span>
-                                                         (名聞遐邇的優質飛驒牛燒肉)</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-slate-800 font-bold">博多天ぷらたかお</span>
-                                                         (超高CP值現炸天婦羅，明太子吃到飽！)</span>
-                                                 </li>
-                                                <li class="text-indigo-600 font-black"><span
-                                                        class="text-slate-900 font-bold">7F・空中夜景展望台：</span><span
-                                                        class="text-indigo-600">Sky Deck</span>
-                                                     開放公眾免費參觀！可在此飽覽榮商圈繁華的街道點燈，是代替綠洲 21 的絕佳浪漫夜景地標。</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <!-- 中日ビル -->
+                    <div class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/60 space-y-3">
+                        <p
+                            class="text-blue-700 font-black text-base flex items-center gap-1.5 border-b border-blue-100 pb-1.5">
+                            <i class="fa-solid fa-building text-blue-500"></i> 中日大樓 (Chunichi Building /
+                            2024全新地標)
+                        </p>
+                        <div class="space-y-2 text-xs">
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">B1・精品茶室：</span><span
+                                        class="text-teal-700 font-black">YATAGARASU</span>
+                                    (日本茶/濃厚抹茶專賣店)。</li>
+                                <li><span class="text-slate-800 font-bold">1F・機能潮鞋：</span><span
+                                        class="text-slate-900 font-bold">HOKA</span> (大受歡迎的高機能慢跑鞋專櫃)。
+                                </li>
+                                <li><span class="text-slate-800 font-bold">2F・露營神牌：</span><span
+                                        class="text-emerald-700 font-black">mont-bell</span>
+                                    (日本最大最齊全的戶外運動用品旗艦店，免稅極划算)。</li>
+                                <li><span class="text-slate-800 font-bold">3F・高評價午晚餐：</span>
+                                    <span class="block pl-4 text-slate-600 mt-1">• <span
+                                            class="text-slate-800 font-bold">うなぎの兼光</span>
+                                        (三河一色產的高品質平價鰻魚飯)</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-rose-600 font-black">燒肉丸明</span>
+                                        (名聞遐邇的優質飛驒牛燒肉)</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-slate-800 font-bold">博多天ぷらたかお</span>
+                                        (超高CP值現炸天婦羅，明太子吃到飽！)</span>
+                                </li>
+                                <li class="text-indigo-600 font-black"><span
+                                        class="text-slate-900 font-bold">7F・空中夜景展望台：</span><span
+                                        class="text-indigo-600">Sky Deck</span>
+                                    開放公眾免費參觀！可在此飽覽榮商圈繁華的街道點燈，是代替綠洲 21 的絕佳浪漫夜景地標。</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                                    <!-- LACHIC -->
-                                    <div class="p-4 bg-orange-50/40 rounded-2xl border border-orange-100/60 space-y-3">
-                                        <p
-                                            class="text-orange-700 font-black text-base flex items-center gap-1.5 border-b border-orange-100 pb-1.5">
-                                            <i class="fa-solid fa-utensils text-orange-500"></i> LACHIC（美食老字號集中營）
-                                        </p>
-                                        <div class="space-y-2 text-xs">
-                                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
-                                                <li><span class="text-slate-800 font-bold">2F・經典甜點：</span><span
-                                                        class="text-pink-600 font-black">HARBS</span>。</li>
-                                                <li><span class="text-slate-800 font-bold">7F・超狂排隊名店街：</span>
-                                                     <span class="block pl-4 text-slate-600 mt-1">• <span
-                                                             class="text-amber-800 font-bold">鳥開總本家</span>
-                                                         (金賞親子丼，軟嫩多汁)</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-amber-800 font-bold">ひつまぶし名古屋備長</span>
-                                                         (備長炭火直烤鰻魚三吃)</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-amber-800 font-bold">矢場とん</span> (經典味噌豬排)</span>
-                                                     <span class="block pl-4 text-slate-600">• <span
-                                                             class="text-rose-600 font-black">一升びん</span>
-                                                         (高CP值炭火松阪牛燒肉！)</span>
-                                                 </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    <!-- LACHIC -->
+                    <div class="p-4 bg-orange-50/40 rounded-2xl border border-orange-100/60 space-y-3">
+                        <p
+                            class="text-orange-700 font-black text-base flex items-center gap-1.5 border-b border-orange-100 pb-1.5">
+                            <i class="fa-solid fa-utensils text-orange-500"></i> LACHIC（美食老字號集中營）
+                        </p>
+                        <div class="space-y-2 text-xs">
+                            <ul class="list-disc list-inside space-y-1 pl-2 text-slate-600">
+                                <li><span class="text-slate-800 font-bold">2F・經典甜點：</span><span
+                                        class="text-pink-600 font-black">HARBS</span>。</li>
+                                <li><span class="text-slate-800 font-bold">7F・超狂排隊名店街：</span>
+                                    <span class="block pl-4 text-slate-600 mt-1">• <span
+                                            class="text-amber-800 font-bold">鳥開總本家</span>
+                                        (金賞親子丼，軟嫩多汁)</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-amber-800 font-bold">ひつまぶし名古屋備長</span>
+                                        (備長炭火直烤鰻魚三吃)</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-amber-800 font-bold">矢場とん</span> (經典味噌豬排)</span>
+                                    <span class="block pl-4 text-slate-600">• <span
+                                            class="text-rose-600 font-black">一升びん</span>
+                                        (高CP值炭火松阪牛燒肉！)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -3026,28 +2950,6 @@
             <div class="bg-white p-6 sm:p-8 rounded-[2rem] shadow-md border-t-8 border-indigo-500">
                 <h3 class="font-black text-2xl mb-4 text-indigo-600 flex items-center"><i
                         class="fa-solid fa-ticket mr-3"></i>景點線上購票清單</h3>
-                <div class="space-y-4">
-
-                    <!-- 7/20 名古屋港水族館 -->
-                    <div
-                        class="p-4 bg-slate-50 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 border border-slate-100 hover:bg-slate-100/70 transition-colors">
-                        <div class="flex items-start gap-3">
-                            <input type="checkbox"
-                                class="w-5 h-5 rounded border-slate-300 accent-indigo-600 mt-0.5 shrink-0">
-                            <div>
-                                <p class="text-sm font-black text-slate-800 flex flex-wrap items-center gap-2">
-                                    <span>名古屋港水族館</span>
-                                    <span
-                                        class="bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full font-black">📅
-                                        預計使用日期：7/20 (一)</span>
-                                </p>
-                                <a href="https://www.klook.com/zh-TW/activity/1759-port-of-nagoya-public-aquarium-nagoya/?spm=LanguageCurrencySelectionPopup.SuggestLanguage_LIST&clickId=990c5f0af8"
-                                    target="_blank"
-                                    class="text-xs text-indigo-500 hover:text-indigo-600 hover:underline break-all mt-1 block max-w-2xl">https://www.klook.com/zh-TW/activity/1759-port-of-nagoya-public-aquarium-nagoya/</a>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- 7/21 樂高樂園 -->
                     <div
                         class="p-4 bg-slate-50 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 border border-slate-100 hover:bg-slate-100/70 transition-colors">
@@ -3068,7 +2970,7 @@
                         </div>
                     </div>
 
-                    <!-- 7/24 名古屋市科學館 -->
+                    <!-- 7/22 名古屋市科學館 -->
                     <div
                         class="p-4 bg-slate-50 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 border border-slate-100 hover:bg-slate-100/70 transition-colors">
                         <div class="flex items-start gap-3">
@@ -3079,7 +2981,7 @@
                                     <span>名古屋市科學館</span>
                                     <span
                                         class="bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full font-black">📅
-                                        預計使用日期：7/24 (五)</span>
+                                        預計使用日期：7/22 (三)</span>
                                 </p>
                                 <a href="https://ticket.ncsm.city.nagoya.jp/" target="_blank"
                                     class="text-xs text-indigo-500 hover:text-indigo-600 hover:underline break-all mt-1 block max-w-2xl">https://ticket.ncsm.city.nagoya.jp/</a>
@@ -3087,7 +2989,25 @@
                         </div>
                     </div>
 
-                </div>
+                    <!-- 7/24 名古屋港水族館 -->
+                    <div
+                        class="p-4 bg-slate-50 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 border border-slate-100 hover:bg-slate-100/70 transition-colors">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border-slate-300 accent-indigo-600 mt-0.5 shrink-0">
+                            <div>
+                                <p class="text-sm font-black text-slate-800 flex flex-wrap items-center gap-2">
+                                    <span>名古屋港水族館</span>
+                                    <span
+                                        class="bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full font-black">📅
+                                        預計使用日期：7/24 (五)</span>
+                                </p>
+                                <a href="https://www.klook.com/zh-TW/activity/1759-port-of-nagoya-public-aquarium-nagoya/?spm=LanguageCurrencySelectionPopup.LanguageCurrencySelectionPopup.SuggestLanguage_LIST&clickId=990c5f0af8"
+                                    target="_blank"
+                                    class="text-xs text-indigo-500 hover:text-indigo-600 hover:underline break-all mt-1 block max-w-2xl">https://www.klook.com/zh-TW/activity/1759-port-of-nagoya-public-aquarium-nagoya/</a>
+                            </div>
+                        </div>
+                    </div>
             </div>
 
 
